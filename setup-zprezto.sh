@@ -1,5 +1,8 @@
 #!/usr/local/bin/zsh
 
+# Exit on any error
+set -e
+
 DOT_ROOT=~/dotfiles/zprezto
 
 echo Zshrc
