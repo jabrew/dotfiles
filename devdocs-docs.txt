@@ -1,0 +1,5 @@
+numpy@1.11
+python@2.7
+scikit_learn
+tensorflow@Python
+tensorflow@Guide

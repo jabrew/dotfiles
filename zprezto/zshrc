@@ -1,0 +1,183 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+
+# Other exports
+
+export EXPORT_NAME=''
+
+# Originally for hologram, needed?
+unsetopt EQUALS
+
+# Aliases
+
+# Stop prompting to remove every file
+# unalias rm
+alias rm='nocorrect rm'
+
+alias cd..='cd ..'
+alias ..='cd ..'
+alias cd-='cd -'
+
+alias up='git fetch && git rebase origin/master'
+alias pb="cd ~/code/my_repo; printf '\\033kmy_repo\\033\\\\'"
+alias wiki='pushd ~/vimwiki && wiki -g ~/vimwiki/index.wiki && popd'
+alias synczsh='rsync -aPvh ~/.zprezto/ target_machine:/home/jbrewer/.zprezto'
+alias pc='~/bin/tmux-copycat/scripts/copycat_mode_start.sh ''^❯'''
+
+title () {
+  printf '\033k'
+  printf $@
+  printf '\033\\'
+}
+
+say () {
+  printf '\x1bPtmux;\x1b\x1b]9;'
+  printf $@
+  printf "\x07\x1b\\"
+}
+
+# # Tab descriptors
+# setTerminalText () {
+#     local mode=$1 ; shift
+#     echo -ne "\033]$mode;$@\007"
+# }
+# # Tmux only respects stt_title
+# stt_both  () { setTerminalText 0 $@; }
+# stt_tab   () { setTerminalText 1 $@; }
+# stt_title () { setTerminalText 2 $@; }
+
+SYNC_OTHER_FILES='\
+  ~/.scmbrc \
+  ~/.git.scmbrc \
+  ~/.gitconfig \
+  ~/.bash_custom \
+  ~/scripts \
+'
+alias syncother="\
+  rsync -aPvh --exclude '.*.swp' $SYNC_OTHER_FILES target_machine:/home/jbrewer/ &&
+  rsync -aPvh --exclude '.*.swp' $SYNC_OTHER_FILES target_machine2:/home/jbrewer/
+"
+
+alias sw='git checkout'
+alias br='git branch'
+
+alias mailme='~/scripts/send-mail.py -t jbrewer@company.com -l $? -s'
+# function mailme() {
+#   ~/scripts/send-mail.py -t jbrewer@company.com -s "$@"
+# }
+
+# Scmpuff only
+function expand_cmd() {
+   eval "$(scmpuff expand -- "$@")";
+}
+
+# Machine specific aliases
+if [[ $HOME == '/Users/jbrewer' ]]; then
+  # E.g. running on a mac
+  alias dev='ssh target_machine'
+  alias ls='ls -F'
+
+  export MY_HOST_NAME='laptop'
+
+  alias cln="echo Probably want to clean server, otherwise: git reset --hard \&\& git clean -fd --exclude virtualenv"
+  alias ws='touch test.txt; sleep 1; rm test.txt'
+  alias gvim='expand_cmd mvim'
+
+  alias tmwatch="teamocil --layout ~/scripts/teamocil_watch.yaml --here"
+
+  # export PATH="/usr/local/Cellar/ruby/2.4.0/bin:$PATH"
+  eval "$(rbenv init -)"
+
+  alias devml='cd ~/code/ml && VIRTUAL_ENV_DISABLE_PROMPT=1 source ~/code/dev/bin/activate'
+  alias undev='deactivate'
+else
+  # Server
+  alias st='zsh'
+  alias stt='tmux source-file ~/.tmux.conf'
+  alias ls='ls -F --color'
+  alias cln='git reset --hard && git clean -fd --exclude virtualenv'
+  fixssh() {
+    eval $(tmux show-env | sed -n 's/^\(SSH_[^=]*\)=\(.*\)/export \1="\2"/p')
+  }
+
+  if [[ `hostname` =~ '^.*jbrewer$' ]]; then
+    export MY_HOST_NAME='specific_server'
+
+    alias att='cd ~/code/my_repo && tmux attach -t session_name'
+    alias attac='tmux new-session -s session_name'
+  elif [[ `hostname` =~ 'another-host-.*' ]]; then
+    export MY_HOST_NAME='another_server'
+
+    # E.g. tmux in specific path for shared server
+    alias att='tmux -S ~/tmux-sockets/dev attach'
+    alias attac='tmux -S ~/tmux-sockets/dev new-session'
+  else
+    export MY_HOST_NAME='another_server'
+
+    alias km='~/scripts/kill_proc.sh a'
+    alias kb='~/scripts/kill_proc.sh b'
+  fi
+  alias nb='jupyter notebook --port 46780 --no-browser'
+fi
+
+# Paths
+export PATH=~/bin:$PATH
+export PATH=~/scripts:$PATH
+
+# Zsh options
+setopt AUTO_PUSHD
+# ls c* shows a list instead of inserting matching
+setopt GLOB_COMPLETE
+setopt PUSHD_MINUS
+setopt PUSHD_IGNORE_DUPS
+
+setopt ZLE
+setopt IGNORE_EOF
+
+setopt NO_FLOW_CONTROL
+
+setopt EXTENDED_GLOB
+setopt NUMERIC_GLOB_SORT
+setopt RC_EXPAND_PARAM
+
+# Overwrite files with a pipe
+setopt CLOBBER
+
+# Allow comments inline in the shell
+setopt interactivecomments
+
+setopt INC_APPEND_HISTORY
+HISTSIZE=100000
+SAVEHIST=100000
+
+export CLICOLOR=1
+
+export EDITOR=vim
+export VISUAL=vim
+
+# Scm puff
+eval "$(scmpuff init -s)"
+
+# # Scm breeze {
+# if [[ $HOME == '/Users/jbrewer' ]]; then
+#   # Laptop
+#   [ -s "/Users/jbrewer/.scm_breeze/scm_breeze.sh" ] && source "/Users/jbrewer/.scm_breeze/scm_breeze.sh"
+# else
+#   # Devserver
+#   [ -s "/home/jbrewer/.scm_breeze/scm_breeze.sh" ] && source "/home/jbrewer/.scm_breeze/scm_breeze.sh"
+# fi
+# # }
+
+# iTerm2 shell integration - doesn't work with tmux
+# test -e "${HOME}/scripts/.iterm2_shell_integration.zsh" && source "${HOME}/scripts/.iterm2_shell_integration.zsh"
