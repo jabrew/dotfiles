@@ -25,6 +25,9 @@ brew install ruby
 
 # For tmux
 brew install reattach-to-user-namespace
+
+# For YCM in vim
+brew install cmake
 "
 
 echo "

@@ -1,7 +1,10 @@
-#!/usr/local/bin/zsh
+#!/usr/bin/env zsh
 
 # Exit on any error
 # set -e
+
+# TODO:
+# sudo dscl . -create /Users/$USER UserShell /usr/local/bin/zsh
 
 DOT_ROOT=~/dotfiles/zprezto
 

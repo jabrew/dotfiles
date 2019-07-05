@@ -24,16 +24,27 @@ unsetopt EQUALS
 # Stop prompting to remove every file
 # unalias rm
 alias rm='nocorrect rm'
+alias cp='nocorrect cp'
+alias mv='nocorrect mv'
 
 alias cd..='cd ..'
 alias ..='cd ..'
 alias cd-='cd -'
 
 alias up='git fetch && git rebase origin/master'
+alias uploc='git rebase origin/master'
 alias pb="cd ~/code/my_repo; printf '\\033kmy_repo\\033\\\\'"
+alias b='~/scripts/build.py'
+alias u='~/scripts/upload.py'
 alias wiki='pushd ~/vimwiki && wiki -g ~/vimwiki/index.wiki && popd'
 alias synczsh='rsync -aPvh ~/.zprezto/ target_machine:/home/jbrewer/.zprezto'
 alias pc='~/bin/tmux-copycat/scripts/copycat_mode_start.sh ''^❯'''
+alias k8=kubectl
+# Note: Mac only - need to switch based on os
+alias less='less -R'
+alias rgp='rg -t py'
+
+alias tclip='tmux show-buffer | pbcopy'
 
 title () {
   printf '\033k'
@@ -41,11 +52,19 @@ title () {
   printf '\033\\'
 }
 
+function rename_tab {
+  # Note: May require tmux set-option -g set-titles on
+  echo -ne "\033]0;"$@"\007"
+}
+rename_tab zsh
+
 say () {
   printf '\x1bPtmux;\x1b\x1b]9;'
   printf $@
   printf "\x07\x1b\\"
 }
+
+# export PATH=
 
 # # Tab descriptors
 # setTerminalText () {
@@ -71,19 +90,20 @@ alias syncother="\
 
 alias sw='git checkout'
 alias br='git branch'
+alias gs='git status'
 
 alias mailme='~/scripts/send-mail.py -t jbrewer@company.com -l $? -s'
 # function mailme() {
 #   ~/scripts/send-mail.py -t jbrewer@company.com -s "$@"
 # }
 
-# Scmpuff only
-function expand_cmd() {
-   eval "$(scmpuff expand -- "$@")";
-}
+# # Scmpuff only
+# function expand_cmd() {
+#    eval "$(scmpuff expand -- "$@")";
+# }
 
 # Machine specific aliases
-if [[ $HOME == '/Users/jbrewer' ]]; then
+if [[ $HOME == "/Users/$USER" ]]; then
   # E.g. running on a mac
   alias dev='ssh target_machine'
   alias ls='ls -F'
@@ -92,12 +112,13 @@ if [[ $HOME == '/Users/jbrewer' ]]; then
 
   alias cln="echo Probably want to clean server, otherwise: git reset --hard \&\& git clean -fd --exclude virtualenv"
   alias ws='touch test.txt; sleep 1; rm test.txt'
-  alias gvim='expand_cmd mvim'
+  # alias gvim='expand_cmd mvim'
+  alias gvim='ge mvim'
 
   alias tmwatch="teamocil --layout ~/scripts/teamocil_watch.yaml --here"
 
   # export PATH="/usr/local/Cellar/ruby/2.4.0/bin:$PATH"
-  eval "$(rbenv init -)"
+  # eval "$(rbenv init -)"
 
   alias devml='cd ~/code/ml && VIRTUAL_ENV_DISABLE_PROMPT=1 source ~/code/dev/bin/activate'
   alias undev='deactivate'
@@ -166,18 +187,17 @@ export CLICOLOR=1
 export EDITOR=vim
 export VISUAL=vim
 
-# Scm puff
-eval "$(scmpuff init -s)"
+# Note: scmpuff doesn't correctly handle paths (try git checkout -b my_branch)
+# # Scm puff
+# eval "$(scmpuff init -s)"
 
-# # Scm breeze {
-# if [[ $HOME == '/Users/jbrewer' ]]; then
-#   # Laptop
-#   [ -s "/Users/jbrewer/.scm_breeze/scm_breeze.sh" ] && source "/Users/jbrewer/.scm_breeze/scm_breeze.sh"
-# else
-#   # Devserver
-#   [ -s "/home/jbrewer/.scm_breeze/scm_breeze.sh" ] && source "/home/jbrewer/.scm_breeze/scm_breeze.sh"
-# fi
-# # }
+# Scm breeze {
+[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+# }
 
 # iTerm2 shell integration - doesn't work with tmux
 # test -e "${HOME}/scripts/.iterm2_shell_integration.zsh" && source "${HOME}/scripts/.iterm2_shell_integration.zsh"
+
+source ~/.zshrc-snap
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
