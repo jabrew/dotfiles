@@ -1,0 +1,6 @@
+* References
+
+- Two line config: https://github.com/yongjhih/rc/blob/master/.config/powerline/themes/shell/default.json
+- powerline-lint to check configs
+- pip install powerline-status
+- Configuration guide - https://github.com/stevenhaddox/dotfiles/blob/master/home/.bash_src/powerline/docs/source/configuration.rst#id3

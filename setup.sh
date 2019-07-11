@@ -34,3 +34,8 @@ echo "
 Plugin installs:
 tmux-copycat
 "
+
+echo "
+Links:
+ln -s ~/VimConfig/glrnvim.yml ~/Library/Preferences/
+"

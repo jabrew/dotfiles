@@ -201,12 +201,12 @@ end)
 hs.hotkey.bind({'alt'}, 's', function()
   local win = hs.window.focusedWindow()
   -- print("N: " .. win:application():name())
-  local app = win:application()
   local targetName = 'Alacritty'
   local targetSuffix = '- NVIM'
 
   function windowMatches(candidate)
     return (
+      candidate ~= nil and
       candidate:application():name() == targetName and
       ends_with(candidate:title(), targetSuffix))
   end
@@ -226,8 +226,16 @@ hs.hotkey.bind({'alt'}, 's', function()
       end
     end
     -- print("Activating any")
-    local targetApp = hs.application.get(targetName)
-    activateWindow(targetApp:allWindows()[1])
+    local windows = hs.window.allWindows()
+    for idx, window in ipairs(windows) do
+      if windowMatches(window) then
+        activateWindow(window)
+        return
+      end
+    end
+    print("Failed to find any matching windows")
+    -- local targetApp = hs.application.get(targetName)
+    -- activateWindow(targetApp:allWindows()[1])
   end
 end)
 
