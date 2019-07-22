@@ -191,8 +191,14 @@ export CLICOLOR=1
 export EDITOR=vim
 export VISUAL=vim
 
+# Dasht {
+export MANPATH=~/bin/dasht/man
+export PATH=~/bin/dasht/bin:$PATH
+export DASHT_DOCSETS_DIR=~/bin/dasht/docsets
+# }
+
+# Scm puff
 # Note: scmpuff doesn't correctly handle paths (try git checkout -b my_branch)
-# # Scm puff
 # eval "$(scmpuff init -s)"
 
 # Scm breeze {
