@@ -146,6 +146,31 @@ function activateWindow(window)
   lastActiveWindow:focus()
 end
 
+function notifyWindowActiveImpl()
+  local win = hs.window.focusedWindow()
+  print("Activating: " .. win:title())
+  -- TODO: Move to global constants
+  local targetName = 'Alacritty'
+  local targetSuffix = '- NVIM'
+
+  -- TODO: Combine windowMatches with other functions
+  function windowMatches(candidate)
+    return (
+      candidate ~= nil and
+      candidate:application():name() == targetName and
+      ends_with(candidate:title(), targetSuffix))
+  end
+  if windowMatches(win) then
+    lastActiveWindow = win
+  end
+end
+
+-- Nvim triggers this before updating its own title - wait so hopefully things
+-- will be setup
+function notifyWindowActive()
+  hs.timer.doAfter(0.5, notifyWindowActiveImpl)
+end
+
 function activateNext(current, targetMatchFn)
   local windows = hs.window.allWindows()
   local shouldActivateNext = false
@@ -257,7 +282,7 @@ function windowPosition(
   end
   shift_h = shift_h or 0
   shift_v = shift_v or 0
-  print("Sizing " .. win:title())
+  -- print("Sizing " .. win:title())
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
