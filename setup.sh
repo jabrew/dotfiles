@@ -12,6 +12,11 @@ Pre-setup steps:
 "
 
 echo "
+Apps
+1. scm_breeze
+"
+
+echo "
 Homebrew installs:
 brew install python
 brew install python3
@@ -19,7 +24,8 @@ brew install zsh
 brew install tmux
 brew install the_silver_searcher
 brew install jq
-brew install scmpuff
+# brew install scmpuff
+
 # Needed for devdocs
 brew install ruby
 
