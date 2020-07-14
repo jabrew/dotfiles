@@ -43,6 +43,7 @@ brew install --head neovim
 pip install --user neovim
 pip3 install --user neovim
 pip3 insall jedi pandas scikit-learn numpy scipy
+ln -s ~/VimConfig/_style.yapf ~/.style.yapf
 
 Install dein to ~/.nvim/dein
 

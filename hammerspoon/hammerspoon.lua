@@ -49,11 +49,11 @@ for index, info in ipairs(itermWindows) do
   k:bind({}, info[1], function() runShell(info[2]); end)
 end
 k:bind({}, 'y', function ()
-  getChromeWindow(2):focus()
+  getChromeWindow(1):focus()
   k.triggered = true
 end)
 k:bind({}, 'u', function ()
-  getChromeWindow(1):focus()
+  getChromeWindow(2):focus()
   k.triggered = true
 end)
 k:bind({}, 'i', function ()
@@ -362,6 +362,10 @@ function layoutWindows()
           print("Ignoring Alacritty window: " .. title)
         end
       elseif appName == 'Google Chrome' then
+        windowPosition(window, 'center', 'top', 1360, 960)
+      elseif appName == 'Microsoft OneNote' then
+        windowPosition(window, 'center', 'top', 1360, 960)
+      elseif appName == 'Zotero' then
         windowPosition(window, 'center', 'top', 1360, 960)
       elseif appName == 'IntelliJ IDEA' then
         windowPosition(window, 'center', 'top', 1424, 1079, -45, 0)
