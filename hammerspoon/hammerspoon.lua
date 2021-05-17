@@ -114,6 +114,7 @@ basicBindings = {
   -- {'w', 'VimWiki'},
   {'q', 'Slack'},
   -- {'t', 'Alacritty'},
+  {'g', 'Microsoft OneNote'},
 }
 for index, info in ipairs(basicBindings) do
   hs.hotkey.bind({'alt'}, info[1], function()
