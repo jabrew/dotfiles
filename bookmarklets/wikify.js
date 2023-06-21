@@ -9,5 +9,14 @@ var dateString = new Date(
 )
     .toISOString()
     .split("T")[0];
-navigator.clipboard.writeText(dateString + " - " + "?" + " - " + document.title + " - " + window.location);
+var title = document.title;
+var suffixes = [
+    " - Google Docs",
+];
+for (const suffix of suffixes) {
+    if (title.endsWith(suffix)) {
+        title = title.substr(0, title.length - suffix.length);
+    };
+};
+navigator.clipboard.writeText(dateString + " - " + "?" + " - " + title + " - " + window.location);
 
