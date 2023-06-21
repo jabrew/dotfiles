@@ -1,0 +1,5 @@
+0x10146,0,0,2560,1440,Program Manager
+0x106d2,1510,31,1042,694,@Saikyo - Discord
+0x2040c,784,30,992,959,Cmder
+0x2606e2,0,0,2560,1440,Microsoft Text Input Application
+0x40308,590,30,1380,1102,Builtin LSP Client exeprience : neovim — Mozilla Firefox
