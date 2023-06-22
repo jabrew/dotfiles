@@ -172,8 +172,63 @@ function notifyWindowActive()
   hs.timer.doAfter(0.5, notifyWindowActiveImpl)
 end
 
+function getWindows()
+  return hs.window.visibleWindows()
+end
+
+-- TODO: Try alternative approach:
+-- This is pending - hammerspoon seems to be faster now (2022-08-08) after the
+-- first really slow call. If that stops working, try this instead
+-- From
+-- https://www.reddit.com/r/hammerspoon/comments/nzo4ty/hswindowfilterdefaultgetwindows_is_slow/
+-- or https://github.com/dmgerman/dmg-hammerspoon/blob/f8da75d121c37df40c0971336eb3f67c73d67187/dmg.spoon/init.lua#L115-L224
+-- Use hs.window.filter and its subscribe event to keep track of all windows
+
+-- windowFinder = hs.window.filter.new()
+-- windowFinder:setDefaultFilter({})
+-- windowFinder:setSortOrder(hs.window.filter.sortByCreated)
+-- currentWindows = {}
+
+-- -- getWindows doesn't actually return all windows - Alacritty often missing
+-- -- for index, window in ipairs(windowFinder:getWindows()) do
+-- print("*****Actual")
+-- for index, window in ipairs(hs.window.allWindows()) do
+--   table.insert(currentWindows, window)
+--   print("    " .. window:title())
+-- end
+-- print("*****End Actual")
+
+-- function printAllWindows()
+--   print("*****Actual")
+--   for index, window in ipairs(windowFinder:getWindows()) do
+--     print("  " .. window:title())
+--   end
+
+--   print("*****Expected")
+--   for index, window in ipairs(currentWindows) do
+--     print("  " .. window:title())
+--   end
+-- end
+
+-- function callbackWindowCreated(window, appName, event)
+--   table.insert(currentWindows, window)
+-- end
+
+-- function callbackWindowDestroyed(destroyedWindow, appName, event)
+--   -- TODO: Is there a better way?
+--   for index, window in ipairs(currentWindows) do
+--     if window == destroyedWindow then
+--       table.remove(currentWindows, index)
+--       return
+--     end
+--   end
+-- end
+
+-- windowFinder:subscribe(hs.window.filter.windowCreated, callbackWindowCreated)
+-- windowFinder:subscribe(hs.window.filter.windowDestroyed, callbackWindowDestroyed)
+
 function activateNext(current, targetMatchFn)
-  local windows = hs.window.allWindows()
+  local windows = getWindows()
   local shouldActivateNext = false
   local firstEligible = nil
   for idx, window in ipairs(windows) do
@@ -203,6 +258,17 @@ function ends_with(item, suffix)
   return suffix == "" or item:sub(-#suffix) == suffix
 end
 
+-- Note: Some processes respond slowly - can repro in console by typing
+-- hs.window._timed_allWindows() (or just allWindows)
+-- Seems to go away after either lots of calls in console, or local a = ..., or
+-- waiting
+-- Timed_allWindows helps here - shows the window causing the issue - generally
+-- a process which isn't responding
+-- TODO: Try visibleWindows instead of allWindows
+-- hs.application.get'Finder':allWindows()
+-- - Doesn't find some windows
+-- - Still really slow, though less clear why (is fast in console) - maybe
+--  windowMatches is slow there?
 hs.hotkey.bind({'alt'}, 'w', function()
   local targetName = 'Alacritty'
   local targetSuffix = '- VIMWIKI'
@@ -213,7 +279,8 @@ hs.hotkey.bind({'alt'}, 'w', function()
       ends_with(candidate:title(), targetSuffix))
   end
 
-  local windows = hs.window.allWindows()
+  local windows = getWindows()
+  -- local windows = hs.application.get('Finder'):allWindows()
   local shouldActivateNext = false
   local firstEligible = nil
   for idx, window in ipairs(windows) do
@@ -242,7 +309,7 @@ hs.hotkey.bind({'alt'}, 's', function()
     if lastActiveWindow then
       -- lastActiveWindow fails if the window is closed - need to detect this
       -- and reset
-      local windows = hs.window.allWindows()
+      local windows = getWindows()
       for idx, window in ipairs(windows) do
         if window:id() == lastActiveWindow:id() then
           -- print("Activating last")
@@ -252,7 +319,7 @@ hs.hotkey.bind({'alt'}, 's', function()
       end
     end
     -- print("Activating any")
-    local windows = hs.window.allWindows()
+    local windows = getWindows()
     for idx, window in ipairs(windows) do
       if windowMatches(window) then
         activateWindow(window)
