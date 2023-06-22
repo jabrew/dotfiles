@@ -1,0 +1,8 @@
+0x10146,0,0,2560,1440,Program Manager
+0x171076,620,320,1300,750,Genshin Impact
+0x2040c,716,30,1128,1039,Cmder
+0x2606e2,0,0,2560,1440,Microsoft Text Input Application
+0x2f06f0,1541,31,1001,653,@Saikyo - Discord
+0x6d0360,590,30,1380,1155,Notes 2017 ?- OneNote for Windows 10
+0x70306,590,30,1380,1156,Recurrent Neural Network with Pytorch | Kaggle — Mozilla Firefox
+0x780774,531,30,1186,963,nn_rnn_circle_data_reader.py (.) - NVIM - Neovim

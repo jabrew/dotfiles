@@ -1,0 +1,717 @@
+* 2019-03-26 23:07:29 --> SaveWinPositions:-> Se grabaron datos de posiciones de ventanas hace  segundos. Disparo en falso del salvapantallas. No se almacenarán posiciones de ventanas. Saliendo de SaveWinPositions. 
+* 2019-03-26 23:36:28 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-03-26 23:36:28 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-03-26 23:36:28 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-03-26 23:56:39 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-03-26 23:56:39 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-03-26 23:56:39 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-03-26 23:56:42 --> RestoreWinPositions:--> Fichero de posiciones creado hace 2 segundos (demasiado reciente): Salvapantallas activado en falso. Abortando... 
+* 2019-03-26 23:56:49 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-03-26 23:56:49 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-03-26 23:56:49 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-03-26 23:56:55 --> RestoreWinPositions:--> Fichero de posiciones creado hace 6 segundos (Correcto). Restaurando ventanas.... 
+# 2019-03-26 23:56:55 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-03-26 23:56:55 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-03-26 23:56:55 --> RestoreWinPositions:-->  Moviendo ventana Inbox (25) - jebrew@gmail.com - Gmail - Mozilla Firefox de coordenadas (X,Y,W,H): 730,194,1380,1088 a coordenadas (X,Y,W,H): 590,30,1380,1088. 
+# 2019-03-26 23:56:55 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-03-26 23:56:55 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-03-26 23:56:55 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-03-26 23:56:55 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 12. 
+# 2019-03-26 23:56:55 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-03-26 23:56:55 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+# 2019-03-27 00:24:06 --> RestoreWinPositions:--> Fichero de posiciones creado hace 766757 segundos (Correcto). Restaurando ventanas.... 
+# 2019-03-27 00:24:06 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-03-27 00:24:06 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-03-27 00:24:06 --> RestoreWinPositions:-->  Moviendo ventana RestoreWinPositions.ahk (~\Documents\Autohotkey) - GVIM de coordenadas (X,Y,W,H): 739,152,1166,982 a coordenadas (X,Y,W,H): 645,32,1166,982. 
+# 2019-03-27 00:24:06 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-03-27 00:24:06 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-03-27 00:24:06 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-03-27 00:24:06 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 12. 
+# 2019-03-27 00:24:06 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-03-27 00:24:06 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:--> Fichero de posiciones creado hace 984854 segundos (Correcto). Restaurando ventanas.... 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-03-27 22:05:03 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-03-27 22:05:03 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: RestoreWinPositions.ahk (~\Documents\Autohotkey) - GVIM. 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 705,86,992,960 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 10. 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: RestoreWinPositions.ahk (~\Documents\Autohotkey) - GVIM. 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-03-27 22:05:03 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+# 2019-03-27 22:08:32 --> RestoreWinPositions:--> Fichero de posiciones creado hace 985183 segundos (Correcto). Restaurando ventanas.... 
+# 2019-03-27 22:08:32 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-03-27 22:08:32 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-03-27 22:08:32 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: RestoreWinPositions.ahk (~\Documents\Autohotkey) - GVIM. 
+# 2019-03-27 22:08:32 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-03-27 22:08:32 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-03-27 22:08:32 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-03-27 22:08:51 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-03-27 22:08:51 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-03-27 22:08:51 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-04-01 13:03:51 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-04-01 13:03:51 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-04-01 13:03:51 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-04-01 15:06:24 --> RestoreWinPositions:--> Fichero de posiciones creado hace 20273 segundos (Correcto). Restaurando ventanas.... 
+# 2019-04-01 15:06:24 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-04-01 15:06:24 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-04-01 15:06:24 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1022,719 a coordenadas (X,Y,W,H): 1448,30,1102,721. 
+# 2019-04-01 15:06:25 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 5,60,1022,736 a coordenadas (X,Y,W,H): 698,239,1022,736. 
+# 2019-04-01 15:06:25 --> RestoreWinPositions:-->  Moviendo ventana Jinx - Items - League of Legends - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-04-01 15:06:25 --> RestoreWinPositions:-->  Moviendo ventana torch.optim.lr_scheduler — PyTorch master documentation - Zeal Portable de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1052. 
+# 2019-04-01 15:06:25 --> RestoreWinPositions:-->  Moviendo ventana WealthFront - 1099_8W273468-2019-02-13.pdf - Foxit Reader de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 590,30,1380,1078. 
+# 2019-04-01 15:06:25 --> RestoreWinPositions:-->  Moviendo ventana Settings de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 801,498,1036,743. 
+# 2019-04-01 15:06:25 --> RestoreWinPositions:-->  Moviendo ventana TurboTax Deluxe 2018 - 2018 Brewer J Form 1040  Individual Tax Return.tax2018 de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1089. 
+# 2019-04-01 15:06:25 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\.vim\disabled-bundle de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 723,377,1024,641. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\.vim\bundle de coordenadas (X,Y,W,H): 18,189,1024,641 a coordenadas (X,Y,W,H): 827,187,1024,641. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\Documents\Tax\2018 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 801,455,1024,641. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Moviendo ventana League of Legends de coordenadas (X,Y,W,H): 0,208,1024,576 a coordenadas (X,Y,W,H): 640,375,1280,720. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\Documents\Autohotkey de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Moviendo ventana trainer_onecycle.py (~\Documents\Programming\fastai\rossmann) - GVIM de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 644,30,1166,982. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 3. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:-->  Ventanas reubicadas: 15. 
+# 2019-04-01 15:06:26 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-04-01 15:06:27 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 18. 
+# 2019-04-01 15:06:27 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-04-01 15:06:27 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-04-01 17:18:13 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-04-01 17:18:13 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-04-01 17:18:13 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-04-01 17:19:02 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-04-01 17:19:02 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-04-01 17:19:02 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-04-01 22:58:50 --> RestoreWinPositions:--> Fichero de posiciones creado hace 53948 segundos (Correcto). Restaurando ventanas.... 
+# 2019-04-01 22:58:50 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-04-01 22:58:50 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-04-01 22:58:50 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1022,719 a coordenadas (X,Y,W,H): 1448,30,1102,721. 
+# 2019-04-01 22:58:50 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 5,60,1022,736 a coordenadas (X,Y,W,H): 698,239,1022,736. 
+# 2019-04-01 22:58:50 --> RestoreWinPositions:-->  Moviendo ventana gl0x0r's live game - Porofessor.gg - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-04-01 22:58:50 --> RestoreWinPositions:-->  Moviendo ventana torch.optim.lr_scheduler — PyTorch master documentation - Zeal Portable de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1156. 
+# 2019-04-01 22:58:50 --> RestoreWinPositions:-->  Moviendo ventana WealthFront - 1099_8W273468-2019-02-13.pdf - Foxit Reader de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 644,30,1288,1148. 
+# 2019-04-01 22:58:50 --> RestoreWinPositions:-->  Moviendo ventana TurboTax Deluxe 2018 - 2018 Brewer J Form 1040  Individual Tax Return.tax2018 de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1089. 
+# 2019-04-01 22:58:50 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\.vim\disabled-bundle de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 723,377,1024,641. 
+# 2019-04-01 22:58:51 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-04-01 22:58:51 --> RestoreWinPositions:-->  Moviendo ventana Generic PnP Monitor and NVIDIA GeForce GTX 970 Properties de coordenadas (X,Y,W,H): 1023,506,420,427 a coordenadas (X,Y,W,H): 1021,505,420,427. 
+# 2019-04-01 22:58:51 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\.vim\bundle de coordenadas (X,Y,W,H): 18,189,1024,641 a coordenadas (X,Y,W,H): 827,187,1024,641. 
+# 2019-04-01 22:58:51 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\Documents\Tax\2018 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 801,455,1024,641. 
+# 2019-04-01 22:58:51 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-04-01 22:58:51 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\Documents\Autohotkey de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-04-01 22:58:51 --> RestoreWinPositions:-->  Moviendo ventana trainer_onecycle.py (~\Documents\Programming\fastai\rossmann) - GVIM de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 644,30,1166,982. 
+# 2019-04-01 22:58:52 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 2. 
+# 2019-04-01 22:58:52 --> RestoreWinPositions:-->  Ventanas reubicadas: 14. 
+# 2019-04-01 22:58:52 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-04-01 22:58:52 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 16. 
+# 2019-04-01 22:58:52 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-04-01 22:58:52 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-04-02 19:22:54 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-04-02 19:22:54 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-04-02 19:22:54 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-04-02 23:13:20 --> RestoreWinPositions:--> Fichero de posiciones creado hace 39066 segundos (Correcto). Restaurando ventanas.... 
+# 2019-04-02 23:13:20 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-04-02 23:13:20 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-04-02 23:13:20 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1022,719 a coordenadas (X,Y,W,H): 1448,30,1102,721. 
+# 2019-04-02 23:13:20 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 5,60,1022,736 a coordenadas (X,Y,W,H): 698,239,1022,736. 
+# 2019-04-02 23:13:20 --> RestoreWinPositions:-->  Moviendo ventana Hanzi Writer – JavaScript library for Chinese character stroke order animations | Hacker News - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Moviendo ventana torch.optim.lr_scheduler — PyTorch master documentation - Zeal Portable de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1156. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Moviendo ventana WealthFront - 1099_8W273468-2019-02-13.pdf - Foxit Reader de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 644,30,1288,1148. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Moviendo ventana TurboTax Deluxe 2018 - 2018 Brewer J Form 1040  Individual Tax Return.tax2018 de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1089. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\.vim\disabled-bundle de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 723,377,1024,641. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Generic PnP Monitor and NVIDIA GeForce GTX 970 Properties. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\.vim\bundle de coordenadas (X,Y,W,H): 18,189,1024,641 a coordenadas (X,Y,W,H): 827,187,1024,641. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\Documents\Tax\2018 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 801,455,1024,641. 
+# 2019-04-02 23:13:21 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-04-02 23:13:22 --> RestoreWinPositions:-->  Moviendo ventana trainer_onecycle.py (~\Documents\Programming\fastai\rossmann) - GVIM de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 644,30,1166,982. 
+# 2019-04-02 23:13:22 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 3. 
+# 2019-04-02 23:13:22 --> RestoreWinPositions:-->  Ventanas reubicadas: 12. 
+# 2019-04-02 23:13:22 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-04-02 23:13:22 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Generic PnP Monitor and NVIDIA GeForce GTX 970 Properties. 
+# 2019-04-02 23:13:22 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 15. 
+# 2019-04-02 23:13:22 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-04-02 23:13:22 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-04-05 14:46:42 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-04-05 14:46:42 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-04-05 14:46:42 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-04-05 17:06:47 --> RestoreWinPositions:--> Fichero de posiciones creado hace 26005 segundos (Correcto). Restaurando ventanas.... 
+# 2019-04-05 17:06:47 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-04-05 17:06:47 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-04-05 17:06:47 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1022,717 a coordenadas (X,Y,W,H): 1448,30,1100,719. 
+# 2019-04-05 17:06:47 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 5,60,1022,736 a coordenadas (X,Y,W,H): 698,239,1022,736. 
+# 2019-04-05 17:06:47 --> RestoreWinPositions:-->  Moviendo ventana torch.nn.functional — PyTorch master documentation - Zeal Portable de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1156. 
+# 2019-04-05 17:06:47 --> RestoreWinPositions:-->  Moviendo ventana LoL Esports - Google Chrome de coordenadas (X,Y,W,H): 25,88,1019,726 a coordenadas (X,Y,W,H): 674,187,1021,728. 
+# 2019-04-05 17:06:47 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\.vim\disabled-bundle de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 723,377,1024,641. 
+# 2019-04-05 17:06:47 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\.vim\bundle de coordenadas (X,Y,W,H): 18,189,1024,641 a coordenadas (X,Y,W,H): 827,187,1024,641. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Moviendo ventana C:\Users\Brew\Documents\Tax\2018 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 801,455,1024,641. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Moviendo ventana Twitch - Items - League of Legends - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Moviendo ventana model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 644,30,1166,982. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 3. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Ventanas reubicadas: 11. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 14. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-04-05 17:06:48 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-04-05 18:02:45 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-04-05 18:02:45 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-04-05 18:02:45 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:--> Fichero de posiciones creado hace 31003 segundos (Correcto). Restaurando ventanas.... 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-04-05 21:12:49 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2278,30 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 3 .... 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 4 .... 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:49 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 5 .... 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 6 .... 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 7 .... 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 8 .... 
+# 2019-04-05 21:12:50 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 9 .... 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 10 .... 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 11 .... 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Moviendo ventana Program Manager de coordenadas (X,Y,W,H): 72,0,2560,1440 a coordenadas (X,Y,W,H): 0,0,2560,1440. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Steam. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: torch.nn.functional — PyTorch master documentation - Zeal Portable. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\disabled-bundle. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Control Panel\System and Security\System. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\.vim\bundle. 
+# 2019-04-05 21:12:51 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Tax\2018. 
+# 2019-04-05 21:12:52 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-04-05 21:12:52 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Settings. 
+# 2019-04-05 21:12:52 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Jhin - Items - League of Legends - Mozilla Firefox. 
+# 2019-04-05 21:12:52 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: model.py (~\Documents\Programming\fastai_old07\fastai) - GVIM. 
+# 2019-04-05 21:12:52 --> RestoreWinPositions:--> Demasiados intentos de ubicar ventanas. Abortando. :-( 
+* 2019-04-17 13:04:38 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-04-17 13:04:38 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-04-17 13:04:38 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-04-17 15:46:47 --> RestoreWinPositions:--> Fichero de posiciones creado hace 24209 segundos (Correcto). Restaurando ventanas.... 
+# 2019-04-17 15:46:47 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-04-17 15:46:47 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-04-17 15:46:47 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-04-17 15:46:47 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-04-17 15:46:47 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1022,682 a coordenadas (X,Y,W,H): 1407,30,1133,684. 
+# 2019-04-17 15:46:47 --> RestoreWinPositions:-->  Moviendo ventana Welcome - Zeal Portable de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1142. 
+# 2019-04-17 15:46:47 --> RestoreWinPositions:-->  Moviendo ventana Introducing MurderBridge.com, a new website that will revolutionize the way you play ARAM! : leagueoflegends - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-04-17 15:46:47 --> RestoreWinPositions:-->  Moviendo ventana Settings de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 801,498,1036,743. 
+# 2019-04-17 15:46:48 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 3. 
+# 2019-04-17 15:46:48 --> RestoreWinPositions:-->  Ventanas reubicadas: 6. 
+# 2019-04-17 15:46:48 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-04-17 15:46:48 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-04-17 15:46:48 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-04-17 15:46:48 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+# 2019-04-17 20:43:33 --> RestoreWinPositions:--> Fichero de posiciones creado hace 73895 segundos (Correcto). Restaurando ventanas.... 
+# 2019-04-17 20:43:33 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-04-17 20:43:33 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-04-17 20:43:33 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Oracle VM VirtualBox Manager. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1023,683 a coordenadas (X,Y,W,H): 1407,30,1133,684. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Moviendo ventana Welcome - Zeal Portable de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1142. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Moviendo ventana Introducing MurderBridge.com, a new website that will revolutionize the way you play ARAM! : leagueoflegends - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Moviendo ventana Settings de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 801,498,1036,743. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 2. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Ventanas reubicadas: 6. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Oracle VM VirtualBox Manager. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 8. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-04-17 20:43:34 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-05-15 09:47:52 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-05-15 09:47:52 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-05-15 09:47:52 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-05-18 21:49:55 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-05-18 21:49:55 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-05-18 21:49:55 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-05-18 22:31:21 --> RestoreWinPositions:--> Fichero de posiciones creado hace 8166 segundos (Correcto). Restaurando ventanas.... 
+# 2019-05-18 22:31:21 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-05-18 22:31:21 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-05-18 22:31:21 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-05-18 22:31:22 --> RestoreWinPositions:-->  Moviendo ventana LoL Esports - Google Chrome de coordenadas (X,Y,W,H): 0,58,1035,742 a coordenadas (X,Y,W,H): 781,177,1135,841. 
+# 2019-05-18 22:31:22 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1023,685 a coordenadas (X,Y,W,H): 1407,30,1135,686. 
+# 2019-05-18 22:31:22 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 666,167,1140,940. 
+# 2019-05-18 22:31:22 --> RestoreWinPositions:-->  Moviendo ventana Amazon.com: 90 degree power strip - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-05-18 22:31:22 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-05-18 22:31:22 --> RestoreWinPositions:-->  Moviendo ventana Settings de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 801,498,1036,743. 
+# 2019-05-18 22:31:22 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-05-18 22:31:22 --> RestoreWinPositions:-->  Moviendo ventana League of Legends de coordenadas (X,Y,W,H): 0,208,1024,576 a coordenadas (X,Y,W,H): 640,375,1280,720. 
+# 2019-05-18 22:31:23 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 2. 
+# 2019-05-18 22:31:23 --> RestoreWinPositions:-->  Ventanas reubicadas: 9. 
+# 2019-05-18 22:31:23 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-05-18 22:31:23 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-05-18 22:31:23 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-05-18 22:31:23 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-05-27 20:08:10 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-05-27 20:08:10 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-05-27 20:08:10 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-05-27 21:53:49 --> RestoreWinPositions:--> Fichero de posiciones creado hace 14539 segundos (Correcto). Restaurando ventanas.... 
+# 2019-05-27 21:53:49 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-05-27 21:53:49 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-05-27 21:53:49 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-05-27 21:53:49 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1022,674 a coordenadas (X,Y,W,H): 1407,30,1125,676. 
+# 2019-05-27 21:53:49 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 666,167,1140,940. 
+# 2019-05-27 21:53:49 --> RestoreWinPositions:-->  Moviendo ventana [D] Machine Learning - WAYR (What Are You Reading) - Week 63 : MachineLearning - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-05-27 21:53:49 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-05-27 21:53:49 --> RestoreWinPositions:-->  Moviendo ventana Settings de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 801,498,1036,743. 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:-->  Moviendo ventana -MiniBufExplorer- - (~\Documents\Programming\fastai\rossmann) - GVIM1 de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 697,30,1166,959. 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:-->  Moviendo ventana _vimrc (~\VimConfig) - GVIM de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 697,30,1166,959. 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 2. 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:-->  Ventanas reubicadas: 9. 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-05-27 21:53:50 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-05-30 15:23:49 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-05-30 15:23:49 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-05-30 15:23:49 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-05-30 17:06:33 --> RestoreWinPositions:--> Fichero de posiciones creado hace 18284 segundos (Correcto). Restaurando ventanas.... 
+# 2019-05-30 17:06:33 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-05-30 17:06:33 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-05-30 17:06:33 --> RestoreWinPositions:-->  Moviendo ventana [WP] When you were a child a strange little man gave you a beautiful gold and silver pocket watch with the image of a serpent eating its own tail etched into it, now nearly a century later as you lay on you death bed the same strange little man appears to take the watch back, whispering "Thank you". : WritingPrompts - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-05-30 17:06:33 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-05-30 17:06:33 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1023,673 a coordenadas (X,Y,W,H): 1407,30,1123,674. 
+# 2019-05-30 17:06:33 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 666,167,1140,940. 
+# 2019-05-30 17:06:33 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-05-30 17:06:33 --> RestoreWinPositions:-->  Moviendo ventana Settings de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 801,498,1036,743. 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:-->  Moviendo ventana -MiniBufExplorer- - (~\Documents\Programming\fastai\rossmann) - GVIM1 de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 697,30,1166,959. 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:-->  Moviendo ventana _vimrc (~\VimConfig) - GVIM de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 697,30,1166,959. 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 2. 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:-->  Ventanas reubicadas: 9. 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-05-30 17:06:34 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-05-30 17:59:29 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-05-30 17:59:29 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-05-30 17:59:29 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-05-30 22:13:06 --> RestoreWinPositions:--> Fichero de posiciones creado hace 45377 segundos (Correcto). Restaurando ventanas.... 
+# 2019-05-30 22:13:06 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-05-30 22:13:06 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-05-30 22:13:06 --> RestoreWinPositions:-->  Moviendo ventana [WP] When you were a child a strange little man gave you a beautiful gold and silver pocket watch with the image of a serpent eating its own tail etched into it, now nearly a century later as you lay on you death bed the same strange little man appears to take the watch back, whispering "Thank you". : WritingPrompts - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-05-30 22:13:06 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-05-30 22:13:06 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1023,673 a coordenadas (X,Y,W,H): 1407,30,1123,674. 
+# 2019-05-30 22:13:06 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 666,167,1140,940. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Moviendo ventana Settings de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 801,498,1036,743. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Moviendo ventana -MiniBufExplorer- - (~\Documents\Programming\fastai\rossmann) - GVIM1 de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 697,30,1166,959. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Moviendo ventana _vimrc (~\VimConfig) - GVIM de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 697,30,1166,959. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 2. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Ventanas reubicadas: 9. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-05-30 22:13:07 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-06-08 23:58:31 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-06-08 23:58:31 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-06-08 23:58:31 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-06-09 00:08:06 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-06-09 00:08:06 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-06-09 00:08:06 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-06-09 23:05:48 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-06-09 23:05:48 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-06-09 23:05:48 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-06-23 21:56:44 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-06-23 21:56:44 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-06-23 21:56:44 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-06-24 00:16:26 --> RestoreWinPositions:--> Fichero de posiciones creado hace 785981 segundos (Correcto). Restaurando ventanas.... 
+# 2019-06-24 00:16:26 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-06-24 00:16:26 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-06-24 00:16:26 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-06-24 00:16:26 --> RestoreWinPositions:-->  Moviendo ventana Razer Configurator de coordenadas (X,Y,W,H): 323,231,895,645 a coordenadas (X,Y,W,H): 833,413,895,645. 
+# 2019-06-24 00:16:26 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 666,167,1140,940. 
+# 2019-06-24 00:16:26 --> RestoreWinPositions:-->  Moviendo ventana League of Legends de coordenadas (X,Y,W,H): 0,208,1024,576 a coordenadas (X,Y,W,H): 640,375,1280,720. 
+# 2019-06-24 00:16:26 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1023,679 a coordenadas (X,Y,W,H): 1407,30,1129,680. 
+# 2019-06-24 00:16:26 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-06-24 00:16:27 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-06-24 00:16:27 --> RestoreWinPositions:-->  Moviendo ventana List of necromancer traits - Guild Wars 2 Wiki (GW2W) - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-06-24 00:16:27 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): -7,30,1036,743 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:27 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 1. 
+# 2019-06-24 00:16:27 --> RestoreWinPositions:-->  Ventanas reubicadas: 9. 
+# 2019-06-24 00:16:27 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-06-24 00:16:27 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 3 .... 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 4 .... 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 5 .... 
+# 2019-06-24 00:16:28 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 6 .... 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 7 .... 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 8 .... 
+# 2019-06-24 00:16:29 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:30 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:30 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:30 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 9 .... 
+# 2019-06-24 00:16:30 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:30 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:30 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:30 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 10 .... 
+# 2019-06-24 00:16:30 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:31 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 9. 
+# 2019-06-24 00:16:31 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2019-06-24 00:16:31 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 11 .... 
+# 2019-06-24 00:16:31 --> RestoreWinPositions:-->  Moviendo ventana watch.lolesports.com - Google Chrome de coordenadas (X,Y,W,H): 781,117,1127,833 a coordenadas (X,Y,W,H): 781,147,1127,833. 
+# 2019-06-24 00:16:31 --> RestoreWinPositions:--> Demasiados intentos de ubicar ventanas. Abortando. :-( 
+* 2019-06-27 21:04:29 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-06-27 21:04:29 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-06-27 21:04:29 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-06-27 21:11:10 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-06-27 21:11:10 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-06-27 21:11:10 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-06-27 23:35:56 --> RestoreWinPositions:--> Fichero de posiciones creado hace 22446 segundos (Correcto). Restaurando ventanas.... 
+# 2019-06-27 23:35:56 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-06-27 23:35:56 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-06-27 23:35:56 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 3,58,1022,736 a coordenadas (X,Y,W,H): 666,167,1140,940. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1024,678 a coordenadas (X,Y,W,H): 1407,30,1127,678. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Moviendo ventana [R] DeepMind: Neural networks suffer from catastrophic forgetting when tasks are encountered sequentially. We overcome this by Bayesian inference in function space, using inducing point sparse GP methods and by optimising over rehearsal data points : MachineLearning - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 1. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Ventanas reubicadas: 6. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 7. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-06-27 23:35:57 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+# 2019-06-30 01:28:33 --> RestoreWinPositions:--> Fichero de posiciones creado hace 2801723 segundos (Correcto). Restaurando ventanas.... 
+# 2019-06-30 01:28:33 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-06-30 01:28:33 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-06-30 01:28:33 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,30,1036,773 a coordenadas (X,Y,W,H): 647,30,1266,1059. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Moviendo ventana Steam de coordenadas (X,Y,W,H): 3,30,1022,766 a coordenadas (X,Y,W,H): 666,167,1140,940. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,32,1023,676 a coordenadas (X,Y,W,H): 1407,30,1127,678. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\zeal-portable-0.6.1-windows-x64 de coordenadas (X,Y,W,H): 18,251,1024,641 a coordenadas (X,Y,W,H): 749,403,1024,641. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Moviendo ventana [R] DeepMind: Neural networks suffer from catastrophic forgetting when tasks are encountered sequentially. We overcome this by Bayesian inference in function space, using inducing point sparse GP methods and by optimising over rehearsal data points : MachineLearning - Mozilla Firefox de coordenadas (X,Y,W,H): -5,30,1032,771 a coordenadas (X,Y,W,H): 590,30,1380,1175. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,30,992,775 a coordenadas (X,Y,W,H): 784,30,992,960. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 1. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Ventanas reubicadas: 6. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 7. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-06-30 01:28:34 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-07-01 15:33:05 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-07-01 15:33:05 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-07-01 15:33:05 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-07-18 20:50:05 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-07-18 20:50:05 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-07-18 20:50:05 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-08-13 19:08:32 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-08-13 19:08:32 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-08-13 19:08:32 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-08-13 19:08:33 --> SaveWinPositions:-> Se grabaron datos de posiciones de ventanas hace 1 segundos. Disparo en falso del salvapantallas. No se almacenarán posiciones de ventanas. Saliendo de SaveWinPositions. 
+* 2019-09-11 19:05:50 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-09-11 19:05:50 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-09-11 19:05:50 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:--> Fichero de posiciones creado hace 2760 segundos (Correcto). Restaurando ventanas.... 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-09-11 19:33:10 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Landing A Rocket With Simple Reinforcement Learning - Mozilla Firefox. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Notes 2017 ?- OneNote. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Store. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Program Manager. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Store. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: C:\Users\Brew\Documents\Programming\kaggle\home_credit_default_risk. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Cmder. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: run_glue.py (examples) - NVIM - Neovim. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: LoL Esports - Google Chrome. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Text Input Application. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 0. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-09-11 19:33:10 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-10-11 19:45:04 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-10-11 19:45:04 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-10-11 19:45:04 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-10-11 21:12:25 --> RestoreWinPositions:--> Fichero de posiciones creado hace 16721 segundos (Correcto). Restaurando ventanas.... 
+# 2019-10-11 21:12:25 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-10-11 21:12:25 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-10-11 21:12:25 --> RestoreWinPositions:-->  Moviendo ventana Razer Configurator de coordenadas (X,Y,W,H): 991,254,1380,1410 a coordenadas (X,Y,W,H): 722,30,1380,1410. 
+# 2019-10-11 21:12:25 --> RestoreWinPositions:-->  Moviendo ventana openai.cmd (C:\Programs\cmd) - NVIM - Neovim de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 531,30,1186,963. 
+# 2019-10-11 21:12:25 --> RestoreWinPositions:-->  Moviendo ventana (265) Panic! At The Disco: Victorious [OFFICIAL VIDEO] - YouTube - Mozilla Firefox de coordenadas (X,Y,W,H): -5,58,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1172. 
+# 2019-10-11 21:12:25 --> RestoreWinPositions:-->  Moviendo ventana LoL Esports - Google Chrome de coordenadas (X,Y,W,H): 0,56,1036,743 a coordenadas (X,Y,W,H): 746,126,1038,829. 
+# 2019-10-11 21:12:25 --> RestoreWinPositions:-->  Moviendo ventana C:\Programs\Docear\docear-1.2.0.0_stable_build291 de coordenadas (X,Y,W,H): 240,182,935,678 a coordenadas (X,Y,W,H): 849,231,935,678. 
+# 2019-10-11 21:12:25 --> RestoreWinPositions:-->  Moviendo ventana Notes 2017 ?- OneNote de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 590,30,1380,1140. 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,56,1022,722 a coordenadas (X,Y,W,H): 1463,30,1077,724. 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,56,992,745 a coordenadas (X,Y,W,H): 784,30,992,927. 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:-->  Moviendo ventana Zotero de coordenadas (X,Y,W,H): -7,58,1036,743 a coordenadas (X,Y,W,H): 761,186,1140,910. 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 2. 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:-->  Ventanas reubicadas: 9. 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 11. 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-10-11 21:12:26 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-10-19 18:30:31 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-10-19 18:30:31 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-10-19 18:30:31 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-11-11 17:20:22 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-11-11 17:20:22 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-11-11 17:20:22 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-11-27 22:46:34 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-11-27 22:46:34 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-11-27 22:46:34 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:--> Fichero de posiciones creado hace 960684 segundos (Correcto). Restaurando ventanas.... 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2019-11-28 18:53:18 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2019-11-28 18:53:18 --> RestoreWinPositions:-->  Moviendo ventana (13) Facebook - Mozilla Firefox de coordenadas (X,Y,W,H): -5,30,1032,771 a coordenadas (X,Y,W,H): 590,30,1380,1172. 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,32,1023,724 a coordenadas (X,Y,W,H): 1463,30,1079,726. 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:-->  Moviendo ventana Office de coordenadas (X,Y,W,H): -7,30,1036,773 a coordenadas (X,Y,W,H): 80,94,1216,941. 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,30,992,775 a coordenadas (X,Y,W,H): 784,30,992,959. 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 3. 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:-->  Ventanas reubicadas: 4. 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 7. 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2019-11-28 18:53:18 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2019-11-28 18:53:28 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-11-28 18:53:28 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-11-28 18:53:28 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2019-12-27 14:44:03 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2019-12-27 14:44:03 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2019-12-27 14:44:03 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2020-02-22 00:20:41 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2020-02-22 00:20:41 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2020-02-22 00:20:41 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2020-02-25 16:51:58 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2020-02-25 16:51:58 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2020-02-25 16:51:58 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2020-04-04 16:07:13 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2020-04-04 16:07:13 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2020-04-04 16:07:13 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:--> Fichero de posiciones creado hace 21915 segundos (Correcto). Restaurando ventanas.... 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2020-04-04 18:26:28 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Moviendo ventana Settings de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 675,190,1216,941. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Moviendo ventana @Saikyo - Discord de coordenadas (X,Y,W,H): 0,32,1023,721 a coordenadas (X,Y,W,H): 1485,30,1047,722. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Edge. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,30,992,775 a coordenadas (X,Y,W,H): 784,30,992,959. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Moviendo ventana boolean_logic_predictors - Jupyter Notebook - Mozilla Firefox de coordenadas (X,Y,W,H): -5,60,1032,741 a coordenadas (X,Y,W,H): 590,30,1380,1066. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Moviendo ventana simple_trainer.py (.) - NVIM - Neovim de coordenadas (X,Y,W,H): -7,60,1036,743 a coordenadas (X,Y,W,H): 531,30,1186,963. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Edge. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Edge. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 3. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Ventanas reubicadas: 5. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Edge. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Edge. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Microsoft Edge. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 8. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2020-04-04 18:26:28 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2020-05-22 00:27:03 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2020-05-22 00:27:03 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2020-05-22 00:27:03 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2020-05-22 00:27:27 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2020-05-22 00:27:27 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2020-05-22 00:27:27 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+* 2021-02-02 19:44:28 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2021-02-02 19:44:28 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2021-02-02 19:44:28 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:--> Fichero de posiciones creado hace 103806597 segundos (Correcto). Restaurando ventanas.... 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:--> No existe el fichero de configuración.
+# 2021-03-06 00:10:26 --> RestoreWinPositions:--> El sistema debe tener al menos 1 pantalla(s).
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Moviendo ventana Cmder de coordenadas (X,Y,W,H): 98,30,992,775 a coordenadas (X,Y,W,H): 784,30,992,959. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Builtin LSP Client exeprience : neovim — Mozilla Firefox. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 2. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Ventanas reubicadas: 1. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:--> Alguna(s) ventana(s) no estaban en su posición correcta. Revisando; pasada número 2 .... 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: @Saikyo - Discord. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Omitiendo ventana inexistente: Builtin LSP Client exeprience : neovim — Mozilla Firefox. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Ventanas que ya estaban en su posición correcta: 3. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:-->  Ventanas reubicadas: 0. 
+# 2021-03-06 00:10:26 --> RestoreWinPositions:--> Ventanas reubicadas corréctamente. Saliendo del programa. :-) 
+* 2021-03-20 12:16:07 --> SaveWinPositions:-> No existe el fichero de configuración.
+* 2021-03-20 12:16:07 --> SaveWinPositions:-> Numero de monitores esperado: 1.
+* 2021-03-20 12:16:07 --> SaveWinPositions:-> Grabando posiciones de las ventanas del Escritorio 
