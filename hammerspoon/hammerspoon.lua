@@ -146,6 +146,8 @@ hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
   -- reactivate the old app after
   hs.timer.doAfter(0.2, function()
     local url = hs.pasteboard.getContents()
+    -- Note: Chrome first since it overlaps
+    url = url:gsub(" - Google Chrome", "")
     url = url:gsub(" - Google Docs", "")
     url = url:gsub(" - Google Slides", "")
     url = url:gsub(" - Quip", "")
