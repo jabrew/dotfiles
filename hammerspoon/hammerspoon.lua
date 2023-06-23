@@ -107,6 +107,60 @@ hs.hotkey.bind({'alt'}, 'x', function()
   -- getChromeWindow(1):focus()
 end)
 
+local getBrowser = function()
+  local app = hs.application.get('Firefox')
+  if app ~= nil then
+    return app
+  end
+  app = hs.application.get('Google Chrome')
+  if app ~= nil then
+    return app
+  end
+  return nil
+end
+
+-- Note: Originally built bookmarklet, but Chrome makes accessing these hard
+hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
+  local app = getBrowser()
+  if app == nil then
+    print("*****No app")
+    return
+  end
+
+  local window = app:focusedWindow()
+  if window == nil then
+    print("*****No window")
+    return
+  end
+  local title = window:title()
+
+  local lastApp = hs.window.focusedWindow()
+
+  -- Note: Doesn't work without this - appears entry not added to clipboard
+  app:activate()
+
+  hs.eventtap.keyStroke({'cmd'}, 'l', 200, app)
+  hs.eventtap.keyStroke({'cmd'}, 'c', 200, app)
+
+  -- Delays are needed or clipboard isn't set. Slightly more readable if we
+  -- reactivate the old app after
+  hs.timer.doAfter(0.2, function()
+    local url = hs.pasteboard.getContents()
+    url = url:gsub(" - Google Docs", "")
+    url = url:gsub(" - Google Slides", "")
+    url = url:gsub(" - Quip", "")
+
+    hs.timer.doAfter(0.2, function()
+      local wikiStr = "- " .. os.date("%Y-%m-%d") .. " - ? - " .. title .. " - " .. url
+      hs.pasteboard.setContents(wikiStr)
+
+      if lastApp ~= nil then
+        lastApp:focus()
+      end
+    end)
+  end)
+end)
+
 basicBindings = {
   {'t', 'MacVim'},
   {'d', 'iTerm2'},
