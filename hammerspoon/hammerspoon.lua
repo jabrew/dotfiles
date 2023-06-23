@@ -153,8 +153,8 @@ hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
   hs.timer.doAfter(0.2, function()
     local url = hs.pasteboard.getContents()
     if has_docs > 0 or has_slides > 0 then
-      url = url.gsub("?.*$", "")
-      url = url.gsub("#.*$", "")
+      url = url:gsub("?.*$", "")
+      url = url:gsub("#.*$", "")
     end
 
     hs.timer.doAfter(0.2, function()
