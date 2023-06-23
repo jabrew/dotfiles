@@ -133,10 +133,11 @@ hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
     return
   end
   local title = window:title()
+  local has_docs, has_slides
   -- Note: Chrome first since it overlaps
   title = title:gsub(" -- Google Chrome", "")
-  title = title:gsub(" -- Google Docs", "")
-  title = title:gsub(" -- Google Slides", "")
+  title, has_docs = title:gsub(" -- Google Docs", "")
+  title, has_slides = title:gsub(" -- Google Slides", "")
   title = title:gsub(" -- Quip", "")
 
   local lastApp = hs.window.focusedWindow()
@@ -151,6 +152,10 @@ hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
   -- reactivate the old app after
   hs.timer.doAfter(0.2, function()
     local url = hs.pasteboard.getContents()
+    if has_docs > 0 or has_slides > 0 then
+      url = url.gsub("?.*$", "")
+      url = url.gsub("#.*$", "")
+    end
 
     hs.timer.doAfter(0.2, function()
       local wikiStr = "- " .. os.date("%Y-%m-%d") .. " - ? - " .. title .. " - " .. url
