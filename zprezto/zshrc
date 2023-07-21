@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 #
 # Executes commands at the start of an interactive session.
 #
@@ -43,12 +50,14 @@ alias u='~/scripts/upload.py'
 alias wiki='pushd ~/vimwiki && wiki -g ~/vimwiki/index.wiki && popd'
 alias synczsh='rsync -aPvh ~/.zprezto/ target_machine:/home/jbrewer/.zprezto'
 alias pc='~/bin/tmux-copycat/scripts/copycat_mode_start.sh ''^❯'''
-alias k8=kubectl
 # Note: Mac only - need to switch based on os
 alias less='less -R'
 alias rgp='rg -t py'
 
 alias tclip='tmux show-buffer | pbcopy'
+
+alias pip='pip3'
+alias python='python3'
 
 title () {
   printf '\033k'
@@ -199,14 +208,28 @@ export DASHT_DOCSETS_DIR=~/bin/dasht/docsets
 
 # Scm puff
 # Note: scmpuff doesn't correctly handle paths (try git checkout -b my_branch)
-# eval "$(scmpuff init -s)"
+eval "$(scmpuff init -s)"
 
 # Scm breeze {
-[ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
+# [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
 # }
 
 # iTerm2 shell integration - doesn't work with tmux
 # test -e "${HOME}/scripts/.iterm2_shell_integration.zsh" && source "${HOME}/scripts/.iterm2_shell_integration.zsh"
+
+# Note: Use cat -v then type characters to find the right codes
+bindkey 'ƒ' emacs-forward-word
+bindkey '∫' emacs-backward-word
+# Idea is up/down are search-including-substrings, ctrl-p/ctrl-n are prefix only
+# https://www.reddit.com/r/zsh/comments/wpicho/debugging_overwritten_bindkey_cmds/
+# - up/down are also hard to rebind, something overrides bindkey within prezto,
+# but these work
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey '^P' up-line-or-beginning-search
+bindkey '^N' down-line-or-beginning-search
 
 source ~/.zshrc-snap
 
@@ -217,10 +240,5 @@ __git_files () {
   _wanted files expl 'local files' _files
 }
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-# Python 3.8
-# export PATH="/usr/local/opt/python@3.8/bin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

@@ -1,4 +1,5 @@
 * References
+- Note: Skipped for now [2023-07] - p10k handes it - https://github.com/romkatv/powerlevel10k
 
 - Two line config: https://github.com/yongjhih/rc/blob/master/.config/powerline/themes/shell/default.json
 - powerline-lint to check configs

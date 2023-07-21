@@ -88,24 +88,19 @@ hyper = hs.hotkey.bind({}, 'F19', pressedHyper, releasedHyper)
 -- Other bindings
 ------------------------
 
--- Laggy - for now use BTT
+-- Laggy - Originally used btt. Removing the delay seems to fix the issue
 -- hs.hotkey.bind({'alt'}, 'e', function() hs.eventtap.keyStroke({'shift'}, '9'); end, nil)
 -- hs.hotkey.bind({'alt'}, 'r', function() hs.eventtap.keyStroke({'shift'}, '0'); end, nil)
+hs.hotkey.bind({'alt'}, 'e', function() hs.eventtap.keyStroke({'shift'}, '9', 0); end, nil)
+hs.hotkey.bind({'alt'}, 'r', function() hs.eventtap.keyStroke({'shift'}, '0', 0); end, nil)
+hs.hotkey.bind({'alt'}, 'c', function() hs.eventtap.keyStroke({'shift'}, '[', 0); end, nil)
+hs.hotkey.bind({'alt'}, 'v', function() hs.eventtap.keyStroke({'shift'}, ']', 0); end, nil)
 
 ------------------------
 -- Testing Chrome Selector
 ------------------------
 
 -- Simple bindings
-
--- log = hs.logger.new('default', 'debug')
-hs.hotkey.bind({'alt'}, 'x', function()
-  -- Kind of hacky - get the first Chrome instance and activate it
-  -- (Should instead find the one with the right command line)
-  hs.application.get('Google Chrome'):activate()
-  -- hs.application.get('Google Chrome'):mainWindow():focus()
-  -- getChromeWindow(1):focus()
-end)
 
 local getBrowser = function()
   local app = hs.application.get('Firefox')
@@ -118,6 +113,19 @@ local getBrowser = function()
   end
   return nil
 end
+
+-- log = hs.logger.new('default', 'debug')
+hs.hotkey.bind({'alt'}, 'x', function()
+  getBrowser():activate()
+
+  -- Kind of hacky - get the first Chrome instance and activate it
+  -- (Should instead find the one with the right command line)
+  -- hs.application.get('Google Chrome'):activate()
+
+  -- Older
+  -- hs.application.get('Google Chrome'):mainWindow():focus()
+  -- getChromeWindow(1):focus()
+end)
 
 -- Note: Originally built bookmarklet, but Chrome makes accessing these hard
 hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
@@ -174,7 +182,7 @@ basicBindings = {
   {'a', 'IntelliJ IDEA'},
   -- {'w', 'VimWiki'},
   {'q', 'Slack'},
-  -- {'t', 'Alacritty'},
+  -- {'t', 'alacritty'},
   {'g', 'Microsoft OneNote'},
 }
 for index, info in ipairs(basicBindings) do
@@ -212,7 +220,7 @@ function notifyWindowActiveImpl()
   local win = hs.window.focusedWindow()
   print("Activating: " .. win:title())
   -- TODO: Move to global constants
-  local targetName = 'Alacritty'
+  local targetName = 'alacritty'
   local targetSuffix = '- NVIM'
 
   -- TODO: Combine windowMatches with other functions
@@ -331,7 +339,7 @@ end
 -- - Still really slow, though less clear why (is fast in console) - maybe
 --  windowMatches is slow there?
 hs.hotkey.bind({'alt'}, 'w', function()
-  local targetName = 'Alacritty'
+  local targetName = 'alacritty'
   local targetSuffix = '- VIMWIKI'
 
   function windowMatches(candidate)
@@ -355,7 +363,7 @@ end)
 hs.hotkey.bind({'alt'}, 's', function()
   local win = hs.window.focusedWindow()
   -- print("N: " .. win:application():name())
-  local targetName = 'Alacritty'
+  local targetName = 'alacritty'
   local targetSuffix = '- NVIM'
 
   function windowMatches(candidate)
@@ -478,7 +486,7 @@ function layoutWindows()
   for index, window in pairs(windows) do
     if window:isVisible() then
       local appName = window:application():name()
-      if appName == 'Alacritty' then
+      if appName == 'alacritty' then
         -- Custom based on title
         local title = window:title()
         if ends_with(title, '- NVIM') then

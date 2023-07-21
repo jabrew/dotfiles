@@ -17,25 +17,23 @@ rm ~/.zpreztorc
 ln -s $DOT_ROOT/zpreztorc ~/.zpreztorc
 
 echo Prompt
-ln -s $DOT_ROOT/prompt_brewer_setup ~/.zprezto/modules/prompt/functions/
+# ln -s $DOT_ROOT/prompt_brewer_setup ~/.zprezto/modules/prompt/functions/
+echo Also consider https://github.com/spaceship-prompt/spaceship-prompt
+ln -s ~/dotfiles/zprezto/theme_p10k.zsh ~/.p10k.zsh
 
 echo "-----------Diff-----------"
-diff ~/dotfiles/zprezto/zpreztorc ~/.zprezto/runcoms/zpreztorc
+diff ~/.zprezto/runcoms/zpreztorc ~/dotfiles/zprezto/zpreztorc
 cat <<-eos
 ----------------------
 Ensure these are the only differences in above diff:
-  diff ~/dotfiles/zprezto/zpreztorc ~/.zprezto/runcoms/zpreztorc
+  diff ~/.zprezto/runcoms/zpreztorc ~/dotfiles/zprezto/zpreztorc
 
-'completion' \ 
-+  'homebrew' \ 
-+  'osx' \ 
-+  'git' \ 
-+  'fasd' \ 
-+  'python' \ 
-+  'syntax-highlighting' \ 
-+  'history-substring-search' \ 
-'prompt'
+>   'osx' \
+>   'git' \
+>   'fasd' \
+>   'python' \
+>   'syntax-highlighting' \
 
-+# zstyle ':prezto:module:prompt' theme 'sorin'
-+zstyle ':prezto:module:prompt' theme 'brewer'
+< zstyle ':prezto:module:prompt' theme 'sorin'
+> zstyle ':prezto:module:prompt' theme 'powerlevel10k'
 eos

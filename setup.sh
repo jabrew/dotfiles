@@ -1,15 +1,29 @@
 #!/usr/local/bin/zsh
 
-# Exit on any error
-set -e
+echo "
+# Install middleClick
+# https://github.com/artginzburg/MiddleClick-Ventura
+# Forked from https://github.com/cl3m/MiddleClick
+brew install --cask --no-quarantine middleclick
+
+Todo: Consider also adding to login items
+
+# Change shell after installing zsh
+chsh -s /bin/zsh
+"
 
 echo "
-Pre-setup steps:
-1. Install iTerm
-2. Install homebrew
-3. Install MacVim (don't use homebrew!)
-4. Install YouCompleteMe
+iTerm:
+- Inconsolata-g for Powerline, 15
+  - 120x45 for new windows
 "
+
+echo "
+Install zprezto from https://github.com/sorin-ionescu/prezto
+"
+
+# Exit on any error
+set -e
 
 echo "
 Apps
@@ -18,62 +32,62 @@ Apps
 
 echo "
 Homebrew installs:
-brew install python
-brew install python3
 brew install zsh
 brew install tmux
 brew install the_silver_searcher
 brew install jq
 # brew install scmpuff
-
-# Needed for devdocs
-brew install ruby
+# cli tools
+brew install fd git-delta exa bat
 
 # For tmux
 brew install reattach-to-user-namespace
-
-# For YCM in vim
-brew install cmake
 "
 
 cat << EOM
 Neovim:
 xcode-select --install
 brew install --head neovim
-pip install --user neovim
 pip3 install --user neovim
-pip3 insall jedi pandas scikit-learn numpy scipy
-ln -s ~/VimConfig/_style.yapf ~/.style.yapf
-
-Install dein to ~/.nvim/dein
 
 Glrnvim:
 brew cask install alacritty
 mkdir ~/bin
 cd ~/bin
 
-clone repo
-Make following edits to main.rs:
-+    let path = env::current_dir().unwrap();
-+    command.arg("--working-directory");
-+    command.arg(path.into_os_string());
-     command.arg("--class");
+clone glrnvim repo
+# Note: Likely no longer needed
+# Make following edits to main.rs:
+# +    let path = env::current_dir().unwrap();
+# +    command.arg("--working-directory");
+# +    command.arg(path.into_os_string());
+#      command.arg("--class");
 
-Set ~/bin/gnv to:
-#!/bin/sh
-~/bin/glrnvim/target/release/glrnvim "$@"
+# Set ~/bin/gnv to:
+# #!/bin/sh
+# ~/bin/glrnvim/target/release/glrnvim "$@"
 
-ln -s ~/VimConfig/glrnvim.yml ~/Library/Preferences/
+ln -s ~/glrnvim/target/release/glrnvim ~/bin/lgv
+
+# Note: Path printed after 'lgv -h' - seems to change
+# ln -s ~/VimConfig/glrnvim.yml ~/Library/Preferences/
+ln -s ~/VimConfig/glrnvim.yml ~/Library/Application\ Support/glrnvim/config.yml
 EOM
 
 echo "
-Other software (Mac)
+Github setup:
+- Generate key with https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+- Add to github with https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+Note: Each repo needs to use ssh instead of https - use git remote -v to check (should be git://)
+"
 
-brew install fzf
-
+echo "
 Hammerspoon
 - Run hammerspoon setup script ~/dotfiles/setup-hammerspoon.sh
 - Run hs.ipc.cliInstall() from console
+  - hs.ipc.cliInstall('/Users/jbrewer')
+  - Test by running 'hs' from cli
+  - May need to mkdir ~/bin first
 
 Karabiner elements:
   - Application -> Right Command
@@ -81,15 +95,12 @@ Karabiner elements:
   - Right option -> right command (only on MS Natural)
   - Right command -> right option (only on MS Natural)
 
-Font: Source Code Pro for Powerline
+Font for nvim: Source Code Pro for Powerline
+Currently use regular Source Code Pro (slightly larger)
   mkdir ~/bin/powerline; cd ~/bin/powerline
   git clone https://github.com/powerline/fonts.git
-
-Ctags:
-brew tap universal-ctags/universal-ctags
-brew install --with-jansson universal-ctags/universal-ctags/universal-ctags
-ln -s /usr/local/opt/universal-ctags/bin/ctags ~/bin/ctags
-# Ensure `ctags --list-features` includes json
+NOTE: Actually for sidebar.nvim use nerd font - extension from https://www.nerdfonts.com/font-downloads
+  SauceCodePro Nerd Font [Or SauceCodePro Nerd Font Mono]
 "
 
 echo "
