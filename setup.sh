@@ -78,7 +78,9 @@ echo "
 Github setup:
 - Generate key with https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 - Add to github with https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-Note: Each repo needs to use ssh instead of https - use git remote -v to check (should be git://)
+Note: Each repo needs to use ssh instead of https
+  - use git remote -v to check (should be git://)
+  - fix with git remote set-url origin git@github.com:jabrew/dotfiles.git
 "
 
 echo "
