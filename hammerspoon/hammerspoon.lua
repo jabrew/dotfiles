@@ -146,6 +146,7 @@ hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
   title = title:gsub(" -- Google Chrome", "")
   title, has_docs = title:gsub(" -- Google Docs", "")
   title, has_slides = title:gsub(" -- Google Slides", "")
+  title, has_sheets = title:gsub(" -- Google Sheets", "")
   title = title:gsub(" -- Quip", "")
 
   local lastApp = hs.window.focusedWindow()
@@ -160,7 +161,7 @@ hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
   -- reactivate the old app after
   hs.timer.doAfter(0.2, function()
     local url = hs.pasteboard.getContents()
-    if has_docs > 0 or has_slides > 0 then
+    if has_docs > 0 or has_slides > 0 or has_sheets > 0 then
       url = url:gsub("?.*$", "")
       url = url:gsub("#.*$", "")
     end
