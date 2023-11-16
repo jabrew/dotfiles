@@ -147,6 +147,7 @@ hs.hotkey.bind({'cmd', 'shift'}, 'v', function()
   title, has_docs = title:gsub(" -- Google Docs", "")
   title, has_slides = title:gsub(" -- Google Slides", "")
   title, has_sheets = title:gsub(" -- Google Sheets", "")
+  title, has_memory = title:gsub(" -- Memory usage: (%d+%.?%d*) [kKMG]B", "")
   title = title:gsub(" -- Quip", "")
 
   local lastApp = hs.window.focusedWindow()
