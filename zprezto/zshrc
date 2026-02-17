@@ -16,6 +16,29 @@ fi
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
+# fzf-tab - must load after compinit (prezto handles that above)
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/contrib/fzf-tab/fzf-tab.plugin.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/contrib/fzf-tab/fzf-tab.plugin.zsh"
+fi
+
+# ---- fzf-tab config ----
+# Enable group headers (e.g. "common commands", "branches" in git completion)
+# Groups cycle with < and >
+zstyle ':completion:*:descriptions' format '[%d]'
+zstyle ':fzf-tab:*' switch-group '<' '>'
+# Colorize file completions
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# Don't show zsh's built-in menu (let fzf-tab handle it)
+zstyle ':completion:*' menu no
+# Don't sort git checkout completions (show in natural order)
+zstyle ':completion:*:git-checkout:*' sort false
+# Preview directories with eza when completing cd/ls/etc
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
+zstyle ':fzf-tab:complete:ls:*' fzf-preview 'eza -1 --color=always $realpath'
+# Use / to accept and continue completing (drill into directories)
+zstyle ':fzf-tab:*' continuous-trigger '/'
+# ---- end fzf-tab config ----
 # Not found: compdef when starting - try https://github.com/sorin-ionescu/prezto/issues/1138
 # e.g. rm ~/.zcomp{dump*,cache}
 # powerline-daemon -q

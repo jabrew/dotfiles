@@ -51,7 +51,15 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git ${ZDOTDIR:-$HO
 ```
 
 
-## 5. Symlinks
+## 5. fzf-tab (fuzzy tab completion)
+
+```sh
+mkdir -p ~/.zprezto/contrib
+git clone https://github.com/Aloxaf/fzf-tab ~/.zprezto/contrib/fzf-tab
+```
+
+
+## 6. Symlinks
 
 ```sh
 DOT_ROOT=~/dotfiles
@@ -69,7 +77,7 @@ ln -sf $DOT_ROOT/git/gitconfig ~/.gitconfig
 ```
 
 
-## 6. Atuin (local mode, no network)
+## 7. Atuin (local mode, no network)
 
 ```sh
 mkdir -p ~/.config/atuin
@@ -87,7 +95,7 @@ atuin import auto
 ```
 
 
-## 7. Zoxide - import fasd data (if migrating)
+## 8. Zoxide - import fasd data (if migrating)
 
 Only needed if migrating from a machine that used fasd:
 
@@ -96,7 +104,7 @@ zoxide import --from=fasd ~/.fasd
 ```
 
 
-## 8. Usage Reference
+## 9. Usage Reference
 
 **fzf (fuzzy finder) - searches the filesystem:**
 - `Ctrl-R` - fuzzy search command history
@@ -108,6 +116,12 @@ zoxide import --from=fasd ~/.fasd
 - `zi` - interactive fzf picker over your visited directories
 
 fzf searches the filesystem as it is now. zoxide remembers where you've been and gets smarter over time. On a fresh install, zoxide's database is empty and populates as you cd around.
+
+**fzf-tab (fuzzy tab completion):**
+- Any `<TAB>` completion uses fzf instead of the default zsh menu
+- `/` on a selected directory drills into it (continuous completion)
+- `<` and `>` cycle between completion groups (e.g. "common commands" vs "aliases" in git)
+- `cd` and `ls` completions show an eza directory preview
 
 **tmux copy mode (vi bindings):**
 - Enter copy mode: `prefix + [` (then navigate with vi keys)
@@ -124,7 +138,7 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 - `prefix + :` - last pane
 
 
-## 9. Manual Steps
+## 10. Manual Steps
 
 **iTerm2:**
 - Font: SauceCodePro Nerd Font, 15pt
@@ -147,7 +161,7 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 - Right command -> right option (only on MS Natural)
 
 
-## 9. Restart Shell
+## 11. Restart Shell
 
 ```sh
 exec zsh
