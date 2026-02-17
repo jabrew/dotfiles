@@ -109,6 +109,20 @@ zoxide import --from=fasd ~/.fasd
 
 fzf searches the filesystem as it is now. zoxide remembers where you've been and gets smarter over time. On a fresh install, zoxide's database is empty and populates as you cd around.
 
+**tmux copy mode (vi bindings):**
+- Enter copy mode: `prefix + [` (then navigate with vi keys)
+- `v` - start selection
+- `V` - select whole line
+- `Ctrl-v` - toggle rectangle/block selection
+- `y` - yank selection to system clipboard (pbcopy on macOS, xclip on Linux)
+- `q` - exit copy mode
+
+**tmux window navigation:**
+- `Shift-Left` / `Shift-Right` - previous/next window
+- `Alt-1` through `Alt-9` - jump to window by number
+- `prefix + ;` - command prompt
+- `prefix + :` - last pane
+
 
 ## 9. Manual Steps
 
