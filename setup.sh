@@ -101,7 +101,3 @@ NOTE: Actually for sidebar.nvim use nerd font - extension from https://www.nerdf
   SauceCodePro Nerd Font [Or SauceCodePro Nerd Font Mono]
 "
 
-echo "
-Plugin installs:
-tmux-copycat
-"

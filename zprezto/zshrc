@@ -39,19 +39,6 @@ zstyle ':fzf-tab:complete:ls:*' fzf-preview 'eza -1 --color=always $realpath'
 # Use / to accept and continue completing (drill into directories)
 zstyle ':fzf-tab:*' continuous-trigger '/'
 # ---- end fzf-tab config ----
-# Not found: compdef when starting - try https://github.com/sorin-ionescu/prezto/issues/1138
-# e.g. rm ~/.zcomp{dump*,cache}
-# powerline-daemon -q
-# . /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
-# Customize to your needs...
-
-# Other exports
-
-export EXPORT_NAME=''
-
-# Originally for hologram, needed?
-unsetopt EQUALS
 
 # Aliases
 
@@ -72,8 +59,6 @@ alias b='~/scripts/build.py'
 alias u='~/scripts/upload.py'
 alias wiki='pushd ~/vimwiki && wiki -g ~/vimwiki/index.wiki && popd'
 alias synczsh='rsync -aPvh ~/.zprezto/ target_machine:/home/jbrewer/.zprezto'
-alias pc='~/bin/tmux-copycat/scripts/copycat_mode_start.sh ''^❯'''
-# Note: Mac only - need to switch based on os
 alias less='less -R'
 alias rgp='rg -t py'
 
@@ -100,18 +85,6 @@ say () {
   printf "\x07\x1b\\"
 }
 
-# export PATH=
-
-# # Tab descriptors
-# setTerminalText () {
-#     local mode=$1 ; shift
-#     echo -ne "\033]$mode;$@\007"
-# }
-# # Tmux only respects stt_title
-# stt_both  () { setTerminalText 0 $@; }
-# stt_tab   () { setTerminalText 1 $@; }
-# stt_title () { setTerminalText 2 $@; }
-
 SYNC_OTHER_FILES='\
   ~/.scmbrc \
   ~/.git.scmbrc \
@@ -129,33 +102,20 @@ alias br='git branch'
 alias gs='git status'
 
 alias mailme='~/scripts/send-mail.py -t jbrewer@company.com -l $? -s'
-# function mailme() {
-#   ~/scripts/send-mail.py -t jbrewer@company.com -s "$@"
-# }
-
-# # Scmpuff only
-# function expand_cmd() {
-#    eval "$(scmpuff expand -- "$@")";
-# }
 
 # Machine specific aliases
 if [[ $HOME == "/Users/$USER" ]]; then
   # E.g. running on a mac
   alias dev='ssh target_machine'
-  # alias ls='ls -F'
   alias ll='eza -l --git --hyperlink --header'
 
   export MY_HOST_NAME='laptop'
 
   alias cln="echo Probably want to clean server, otherwise: git reset --hard \&\& git clean -fd --exclude virtualenv"
   alias ws='touch test.txt; sleep 1; rm test.txt'
-  # alias gvim='expand_cmd mvim'
   alias gvim='ge mvim'
 
   alias tmwatch="teamocil --layout ~/scripts/teamocil_watch.yaml --here"
-
-  # export PATH="/usr/local/Cellar/ruby/2.4.0/bin:$PATH"
-  # eval "$(rbenv init -)"
 
   alias devml='cd ~/code/ml && VIRTUAL_ENV_DISABLE_PROMPT=1 source ~/code/dev/bin/activate'
   alias undev='deactivate'
@@ -233,13 +193,6 @@ export DASHT_DOCSETS_DIR=~/bin/dasht/docsets
 # Scm puff
 # Note: scmpuff doesn't correctly handle paths (try git checkout -b my_branch)
 eval "$(scmpuff init -s)"
-
-# Scm breeze {
-# [ -s "$HOME/.scm_breeze/scm_breeze.sh" ] && source "$HOME/.scm_breeze/scm_breeze.sh"
-# }
-
-# iTerm2 shell integration - doesn't work with tmux
-# test -e "${HOME}/scripts/.iterm2_shell_integration.zsh" && source "${HOME}/scripts/.iterm2_shell_integration.zsh"
 
 # Note: Use cat -v then type characters to find the right codes
 bindkey 'ƒ' emacs-forward-word
