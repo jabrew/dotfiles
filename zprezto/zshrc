@@ -119,7 +119,8 @@ alias mailme='~/scripts/send-mail.py -t jbrewer@company.com -l $? -s'
 if [[ $HOME == "/Users/$USER" ]]; then
   # E.g. running on a mac
   alias dev='ssh target_machine'
-  alias ls='ls -F'
+  # alias ls='ls -F'
+  alias ll='eza -l --git --hyperlink --header'
 
   export MY_HOST_NAME='laptop'
 
@@ -242,3 +243,4 @@ __git_files () {
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="$HOME/.local/bin:$PATH"
