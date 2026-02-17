@@ -34,14 +34,10 @@ echo "
 Homebrew installs:
 brew install zsh
 brew install tmux
-brew install the_silver_searcher
 brew install jq
 # brew install scmpuff
 # cli tools
-brew install fd git-delta exa bat
-
-# For tmux
-brew install reattach-to-user-namespace
+brew install fd ripgrep git-delta eza bat
 "
 
 cat << EOM
