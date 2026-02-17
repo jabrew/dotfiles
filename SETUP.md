@@ -51,11 +51,12 @@ git clone --recursive https://github.com/sorin-ionescu/prezto.git ${ZDOTDIR:-$HO
 ```
 
 
-## 5. fzf-tab (fuzzy tab completion)
+## 5. Prezto contrib plugins
 
 ```sh
 mkdir -p ~/.zprezto/contrib
 git clone https://github.com/Aloxaf/fzf-tab ~/.zprezto/contrib/fzf-tab
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ~/.zprezto/contrib/fast-syntax-highlighting
 ```
 
 
@@ -74,21 +75,14 @@ ln -sf $DOT_ROOT/tmux/tmux.conf ~/.tmux.conf
 
 # git
 ln -sf $DOT_ROOT/git/gitconfig ~/.gitconfig
-```
 
-
-## 7. Atuin (local mode, no network)
-
-```sh
+# atuin
 mkdir -p ~/.config/atuin
-cat > ~/.config/atuin/config.toml << 'EOF'
-## Local-only mode - no network sync
-sync_address = ""
-auto_sync = false
-EOF
+ln -sf $DOT_ROOT/atuin/config.toml ~/.config/atuin/config.toml
 ```
 
-Import existing zsh history if available:
+
+## 7. Atuin - import history
 
 ```sh
 atuin import auto
@@ -122,6 +116,14 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 - `/` on a selected directory drills into it (continuous completion)
 - `<` and `>` cycle between completion groups (e.g. "common commands" vs "aliases" in git)
 - `cd` and `ls` completions show an eza directory preview
+
+**atuin (shell history TUI) - `Ctrl-R` to open:**
+- Type to fuzzy filter, `Enter` to execute, `Tab` to paste without executing
+- `Ctrl-S` cycles search mode: fuzzy / prefix / fulltext / subsequence
+- `Ctrl-R` (while TUI is open) cycles filter: global / host / session / directory
+- `Ctrl-D` deletes a history entry
+- Directory filter is the killer feature: cd into a project and only see commands run there
+- `atuin stats` shows most-used commands, `atuin history list` browses full history
 
 **tmux copy mode (vi bindings):**
 - Enter copy mode: `prefix + [` (then navigate with vi keys)

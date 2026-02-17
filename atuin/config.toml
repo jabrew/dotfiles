@@ -1,0 +1,3 @@
+## Local-only mode - no network sync
+sync_address = ""
+auto_sync = false

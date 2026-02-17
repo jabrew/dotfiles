@@ -283,3 +283,11 @@ bindkey '^F' fzf-cd-widget
 
 # zoxide - directory jumping (z <query>, zi for interactive)
 eval "$(zoxide init zsh)"
+
+# fast-syntax-highlighting (replaces zsh-syntax-highlighting)
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/contrib/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/contrib/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh"
+fi
+
+# atuin - shell history (local mode, no sync)
+eval "$(atuin init zsh)"
