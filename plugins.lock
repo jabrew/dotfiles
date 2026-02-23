@@ -1,0 +1,18 @@
+# Plugin lockfile - pins each plugin to a known working commit
+# Format: install_path repo_url commit_sha
+#
+# To install: run install-plugins.sh
+# To update a plugin: cd into its directory, git pull, then update the SHA here
+# To update all: run install-plugins.sh --update (pulls latest, prints new SHAs)
+
+# prezto framework
+~/.zprezto https://github.com/sorin-ionescu/prezto c9c716e9c11938a1aff2f30230d4dc1da38dc564
+
+# zsh plugins (installed to ~/.zprezto/contrib/)
+~/.zprezto/contrib/fzf-tab https://github.com/Aloxaf/fzf-tab 747c15de85a38748b28c29ac65616137dbb4c8b6
+~/.zprezto/contrib/fast-syntax-highlighting https://github.com/zdharma-continuum/fast-syntax-highlighting 3d574ccf48804b10dca52625df13da5edae7f553
+
+# tmux plugins (installed to ~/dotfiles/tmux/plugins/)
+~/dotfiles/tmux/plugins/tmux-yank https://github.com/tmux-plugins/tmux-yank acfd36e4fcba99f8310a7dfb432111c242fe7392
+~/dotfiles/tmux/plugins/extrakto https://github.com/laktak/extrakto 5004fb70292d9a4e7ea1a35c5fa9ba99768d02e8
+~/dotfiles/tmux/plugins/tmux-fingers https://github.com/Morantron/tmux-fingers 29f90165fa858021ebd31838fb4d6f112c6d9ef0

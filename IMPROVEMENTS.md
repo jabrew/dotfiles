@@ -145,14 +145,18 @@ Status: Reviewed - comments on lines starting with ">"
 - `sainnhe/tmux-fzf` - fuzzy session/window/pane switching
 - `fcsonline/tmux-thumbs` / `Morantron/tmux-fingers` - vimium-style quick copy from pane output
 
+### 16. Evaluate Prezto vs lighter alternatives
+- Prezto is working fine and not blocking anything
+- All modern plugins (fzf-tab, fast-syntax-highlighting, zoxide, atuin) already bypass prezto
+- Prezto is mostly just a bootloader for compinit and default options at this point
+- Migration risk: subtle breakages from missed options/bindings set by prezto modules
+- No functionality gain - purely preventative against future prezto abandonment
+- If pursued, use "gradual extraction" approach: read each module, copy needed lines, remove one at a time
+- Alternatives: antidote (simple static bundler), zimfw (faster framework), or no manager at all
+
 
 ---
 
-## Priority Summary
+## Completed
 
-- P0 (do first): Items 1, 2, 3, 4
-- P1 (high value): Items 5, 9, 10, 12
-- P2 (worth doing): Items 7, 13, 19
-- P3 (nice to have): Items 6, 14, 15, 17, 18
-- P4 (evaluate later): Item 16
-- Deferred: Items 8, 11
+Items 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 17, 18

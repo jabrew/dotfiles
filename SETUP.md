@@ -44,23 +44,24 @@ chsh -s /bin/zsh
 ```
 
 
-## 4. Prezto
+## 4. Install plugins
+
+Installs prezto, zsh plugins, and tmux plugins at pinned commits from `plugins.lock`:
 
 ```sh
-git clone --recursive https://github.com/sorin-ionescu/prezto.git ${ZDOTDIR:-$HOME}/.zprezto
+./install-plugins.sh
 ```
 
-
-## 5. Prezto contrib plugins
+To update all plugins to latest and see new SHAs:
 
 ```sh
-mkdir -p ~/.zprezto/contrib
-git clone https://github.com/Aloxaf/fzf-tab ~/.zprezto/contrib/fzf-tab
-git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ~/.zprezto/contrib/fast-syntax-highlighting
+./install-plugins.sh --update
 ```
 
+Then update the SHAs in `plugins.lock` to pin the new versions.
 
-## 6. Symlinks
+
+## 5. Symlinks
 
 ```sh
 DOT_ROOT=~/dotfiles
@@ -82,14 +83,14 @@ ln -sf $DOT_ROOT/atuin/config.toml ~/.config/atuin/config.toml
 ```
 
 
-## 7. Atuin - import history
+## 6. Atuin - import history
 
 ```sh
 atuin import auto
 ```
 
 
-## 8. Zoxide - import fasd data (if migrating)
+## 7. Zoxide - import fasd data (if migrating)
 
 Only needed if migrating from a machine that used fasd:
 
@@ -98,7 +99,7 @@ zoxide import --from=fasd ~/.fasd
 ```
 
 
-## 9. Usage Reference
+## 8. Usage Reference
 
 **fzf (fuzzy finder) - searches the filesystem:**
 - `Ctrl-R` - fuzzy search command history
@@ -125,13 +126,26 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 - Directory filter is the killer feature: cd into a project and only see commands run there
 - `atuin stats` shows most-used commands, `atuin history list` browses full history
 
-**tmux copy mode (vi bindings):**
+**tmux copy mode (vi bindings) + tmux-yank:**
 - Enter copy mode: `prefix + [` (then navigate with vi keys)
 - `v` - start selection
 - `V` - select whole line
 - `Ctrl-v` - toggle rectangle/block selection
-- `y` - yank selection to system clipboard (pbcopy on macOS, xclip on Linux)
+- `y` - yank selection to system clipboard (auto-detects pbcopy/xclip/xsel/wl-copy)
 - `q` - exit copy mode
+- `prefix + y` (in normal mode) - copy current command line to clipboard
+- `prefix + Y` (in normal mode) - copy current working directory to clipboard
+
+**extrakto (token extraction from tmux pane):**
+- `prefix + Tab` - opens fzf picker over all text/tokens in the current pane
+- Type to fuzzy filter, `Enter` to insert the selection, `Ctrl-Y` to copy to clipboard
+- `Tab` cycles between word / path / url / line extraction modes
+- Great for grabbing file paths, URLs, hashes, or any text visible in the pane
+
+**tmux-fingers (vimium-style hints):**
+- `prefix + F` - highlights copyable items (paths, URLs, hashes, IPs, etc.) with hint labels
+- Type the hint label to copy that item to clipboard
+- Similar to Vimium's link hints in a browser
 
 **tmux window navigation:**
 - `Shift-Left` / `Shift-Right` - previous/next window
@@ -140,7 +154,7 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 - `prefix + :` - last pane
 
 
-## 10. Manual Steps
+## 9. Manual Steps
 
 **iTerm2:**
 - Font: SauceCodePro Nerd Font, 15pt
@@ -163,7 +177,7 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 - Right command -> right option (only on MS Natural)
 
 
-## 11. Restart Shell
+## 10. Restart Shell
 
 ```sh
 exec zsh

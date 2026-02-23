@@ -38,6 +38,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
 zstyle ':fzf-tab:complete:ls:*' fzf-preview 'eza -1 --color=always $realpath'
 # Use / to accept and continue completing (drill into directories)
 zstyle ':fzf-tab:*' continuous-trigger '/'
+# Use tmux popup for fzf-tab completions (requires tmux 3.2+)
+zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
 # ---- end fzf-tab config ----
 
 # Aliases
@@ -225,10 +227,10 @@ export PATH="$HOME/.local/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f'
 export FZF_CTRL_T_COMMAND='fd --type f'
-export FZF_CTRL_T_OPTS="--preview 'bat --color=always --style=numbers --line-range=:500 {}'"
+export FZF_CTRL_T_OPTS="--tmux --preview 'bat --color=always --style=numbers --line-range=:500 {}'"
 export FZF_ALT_C_COMMAND='fd --type d'
-export FZF_ALT_C_OPTS="--preview 'eza --tree --level=2 --color=always {}'"
-export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window=up:3:wrap"
+export FZF_ALT_C_OPTS="--tmux --preview 'eza --tree --level=2 --color=always {}'"
+export FZF_CTRL_R_OPTS="--tmux --preview 'echo {}' --preview-window=up:3:wrap"
 
 # Rebind fzf directory jump from Alt-C to Ctrl-F
 bindkey -r '\ec'
@@ -243,4 +245,5 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/contrib/fast-syntax-highlighting/fast-synta
 fi
 
 # atuin - shell history (local mode, no sync)
-eval "$(atuin init zsh)"
+eval "$(atuin init zsh --disable-up-arrow)"
+
