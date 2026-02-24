@@ -33,15 +33,32 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu no
 # Don't sort git checkout completions (show in natural order)
 zstyle ':completion:*:git-checkout:*' sort false
-# Preview directories with eza when completing cd/ls/etc
-zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-zstyle ':fzf-tab:complete:ls:*' fzf-preview 'eza -1 --color=always $realpath'
+# Preview commands - edit these to change previews for all commands in each group
+_fzf_preview_dir='eza -1 --color=always $realpath'
+_fzf_preview_file='bat --color=always --style=numbers --line-range=:200 $realpath 2>/dev/null'
+
+# Directory previews
+for cmd in cd ls ll la eza pushd; do
+  zstyle ":fzf-tab:complete:$cmd:*" fzf-preview "$_fzf_preview_dir"
+done
+# File previews
+for cmd in cat bat vim nvim lgv; do
+  zstyle ":fzf-tab:complete:$cmd:*" fzf-preview "$_fzf_preview_file"
+done
+# Git branch/ref previews
+zstyle ':fzf-tab:complete:git-(checkout|switch|branch|merge|rebase|diff|log):*' fzf-preview 'git log --oneline --color=always -20 $word 2>/dev/null'
+# Process previews
+zstyle ':fzf-tab:complete:kill:*' fzf-preview 'ps -p $word -o pid,user,%cpu,%mem,command 2>/dev/null'
+# Environment variable previews
+zstyle ':fzf-tab:complete:export:*' fzf-preview 'echo ${(P)word}'
+# SSH host previews
+zstyle ':fzf-tab:complete:ssh:*' fzf-preview 'echo "Host: $word"'
 # Use / to accept and continue completing (drill into directories)
 zstyle ':fzf-tab:*' continuous-trigger '/'
 # Use tmux popup for fzf-tab completions (requires tmux 3.2+)
 zstyle ':fzf-tab:*' fzf-command ftb-tmux-popup
-zstyle ':fzf-tab:*' popup-min-size 80 20
-zstyle ':fzf-tab:*' popup-size 80 50
+zstyle ':fzf-tab:*' popup-min-size 120 30
+zstyle ':fzf-tab:*' popup-size 120 50
 # ---- end fzf-tab config ----
 
 # Aliases
