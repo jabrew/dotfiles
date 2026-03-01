@@ -55,10 +55,23 @@ Try: cd into a project, then `Ctrl-R` and filter by directory - you'll only see 
 
 ## Zsh - Syntax Highlighting (fast-syntax-highlighting)
 
-Active as you type - no action needed. Commands turn green when valid, red when not found. Strings are yellow, options are cyan, paths are magenta.
+Active as you type - no action needed. Colors:
+- **green** - valid command / alias / function
+- **red bold** - unknown command
+- **yellow** - strings, reserved words (if/while/for)
+- **cyan** - options (--flag, -f)
+- **magenta** - file/directory paths
+- **magenta underline** - directory paths specifically
+- **blue bold** - glob patterns (*, **, ?)
+- **gray** - comments (#)
 
-Try: Type a valid command name and watch it turn green. Type a fake command and see it go red.
-Try: Type a quoted string and notice the color change.
+Try typing these (don't run them, just observe):
+```
+ls --color=always ~/dotfiles          # green cmd, cyan option, magenta path
+fakecommand --option "a string"       # red cmd, cyan option, yellow string
+for f in *.zsh; do echo $f; done     # yellow keywords, blue glob
+git status # show changes             # gray comment
+```
 
 
 ## Zsh - Other Keybindings

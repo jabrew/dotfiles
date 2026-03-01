@@ -88,6 +88,22 @@ alias tclip='tmux show-buffer | pbcopy'
 alias pip='pip3'
 alias python='python3'
 
+# ge - expand scmpuff numeric args ($e1, $e2, ...) for any command
+# e.g. `ge vim 1 2` → `vim $e1 $e2`
+ge() {
+  local cmd="$1"; shift
+  local args=()
+  for arg in "$@"; do
+    if [[ "$arg" =~ ^[0-9]+$ ]]; then
+      local var="e${arg}"
+      args+=("${(P)var}")
+    else
+      args+=("$arg")
+    fi
+  done
+  "$cmd" "${args[@]}"
+}
+
 title () {
   printf '\033k'
   printf $@
