@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# In copy mode: copy the command output block surrounding the cursor.
+# Args: pane_id cursor_y history_size scroll_position
+
+pane_id="$1"
+cursor_y="$2"
+history_size="$3"
+scroll_position="$4"
+
+# Capture full scrollback
+content=$(tmux capture-pane -p -t "$pane_id" -S -"$history_size" 2>/dev/null)
+total_lines=$(printf '%s\n' "$content" | wc -l | tr -d ' ')
+
+# Cursor's absolute line number in the captured content (1-indexed)
+# Captured content = history_size lines + visible pane area
+# Visible area starts at line (history_size - scroll_position + 1)
+cursor_abs=$((history_size - scroll_position + cursor_y + 1))
+
+# Find all prompt line numbers
+prompt_lines=()
+while IFS= read -r line; do
+    prompt_lines+=("$line")
+done < <(printf '%s\n' "$content" | grep -n $'^❯ ' | cut -d: -f1)
+
+# Find nearest prompt before cursor (start of block)
+start_line=1
+for line in "${prompt_lines[@]}"; do
+    if [[ $line -le $cursor_abs ]]; then
+        start_line=$line
+    fi
+done
+
+# Find nearest prompt after cursor (end of block)
+end_line=$total_lines
+for line in "${prompt_lines[@]}"; do
+    if [[ $line -gt $cursor_abs ]]; then
+        end_line=$line
+        break
+    fi
+done
+
+if [[ $((end_line - start_line)) -le 1 ]]; then
+    tmux display-message "No output in this block"
+    exit 0
+fi
+
+output=$(printf '%s\n' "$content" | sed -n "$((start_line+1)),$((end_line-1))p")
+
+if command -v pbcopy &>/dev/null; then
+    printf '%s' "$output" | pbcopy
+elif command -v wl-copy &>/dev/null; then
+    printf '%s' "$output" | wl-copy
+elif command -v xclip &>/dev/null; then
+    printf '%s' "$output" | xclip -selection clipboard
+elif command -v xsel &>/dev/null; then
+    printf '%s' "$output" | xsel --clipboard --input
+fi
+
+tmux display-message "Copied block ($(printf '%s' "$output" | wc -l | tr -d ' ') lines)"

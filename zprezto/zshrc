@@ -162,6 +162,7 @@ else
   alias st='zsh'
   alias stt='tmux source-file ~/.tmux.conf'
   alias ls='ls -F --color'
+  alias ll='eza -l --git --header'
   alias cln='git reset --hard && git clean -fd --exclude virtualenv'
   fixssh() {
     eval $(tmux show-env | sed -n 's/^\(SSH_[^=]*\)=\(.*\)/export \1="\2"/p')

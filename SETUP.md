@@ -80,6 +80,10 @@ ln -sf $DOT_ROOT/git/gitconfig ~/.gitconfig
 # atuin
 mkdir -p ~/.config/atuin
 ln -sf $DOT_ROOT/atuin/config.toml ~/.config/atuin/config.toml
+
+# fd global ignore (applies to fzf Ctrl-T/Ctrl-F)
+mkdir -p ~/.config/fd
+ln -sf $DOT_ROOT/fd/fdignore ~/.config/fd/ignore
 ```
 
 

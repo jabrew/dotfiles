@@ -1,0 +1,32 @@
+# Global fd ignore file - applied everywhere fd runs (including fzf Ctrl-T/Ctrl-F)
+# fd also respects .gitignore in each project automatically
+
+# macOS noise
+.DS_Store
+.Trash
+Library
+.Spotlight-V100
+.fseventsd
+
+# Build artifacts
+node_modules
+dist
+build
+.next
+target
+
+# Python
+__pycache__
+.venv
+venv
+*.pyc
+.pytest_cache
+
+# Version control internals
+.git
+.hg
+.svn
+
+# Caches
+.cache
+.npm

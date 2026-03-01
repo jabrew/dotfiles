@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Copy the output of the last completed command to clipboard.
+# Finds the last two "^❯ " prompt lines and copies everything between them.
+
+pane_id="${1:-}"
+content=$(tmux capture-pane -p -t "$pane_id" -S -10000 2>/dev/null)
+
+# Find line numbers of all prompt lines
+prompt_lines=()
+while IFS= read -r line; do
+    prompt_lines+=("$line")
+done < <(printf '%s\n' "$content" | grep -n $'^❯ ' | cut -d: -f1)
+
+count=${#prompt_lines[@]}
+if [[ $count -lt 2 ]]; then
+    tmux display-message "Need at least 2 prompts in history"
+    exit 0
+fi
+
+second_last=${prompt_lines[$((count-2))]}
+last=${prompt_lines[$((count-1))]}
+
+if [[ $((last - second_last)) -le 1 ]]; then
+    tmux display-message "No output between last two prompts"
+    exit 0
+fi
+
+output=$(printf '%s\n' "$content" | sed -n "$((second_last+1)),$((last-1))p")
+
+if command -v pbcopy &>/dev/null; then
+    printf '%s' "$output" | pbcopy
+elif command -v wl-copy &>/dev/null; then
+    printf '%s' "$output" | wl-copy
+elif command -v xclip &>/dev/null; then
+    printf '%s' "$output" | xclip -selection clipboard
+elif command -v xsel &>/dev/null; then
+    printf '%s' "$output" | xsel --clipboard --input
+fi
+
+tmux display-message "Copied last output ($(printf '%s' "$output" | wc -l | tr -d ' ') lines)"
