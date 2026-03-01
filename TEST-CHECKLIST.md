@@ -147,10 +147,15 @@ Try: Run any command with file paths in the output, then `prefix + Tab` to grab 
 
 ## tmux - tmux-fingers (vimium-style hints)
 
-- **prefix + F** - Highlights all copyable items (paths, URLs, hashes, IPs, etc.) with letter hints
+- **prefix + /** - Highlights all copyable items (paths, URLs, hashes, IPs, etc.) with letter hints
+- **prefix + J** - Jump mode: places the cursor at the match position instead of copying (useful for navigating to a path in copy mode)
 - Type the hint letters to copy that item to clipboard
+- **Shift + hint** - Copy and automatically paste the match
+- **Ctrl + hint** - Copy and open (URL in browser, path in Finder)
+- **Tab** - Enter multi-select mode; select multiple matches, second Tab exits and copies all
 
-Try: Run `git log --oneline` or `ls -la`, then `prefix + F`. Type the hint next to a hash or filename.
+Try: Run `git log --oneline` or `ls -la`, then `prefix + /`. Type the hint next to a hash or filename.
+Try: `prefix + J` to jump the cursor to a match, then enter copy mode to select around it.
 
 Note: tmux-fingers needs to compile on first use (requires Rust). If it fails, run `cargo` to check if Rust is installed.
 
