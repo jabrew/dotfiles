@@ -25,7 +25,8 @@ if [[ $((last - second_last)) -le 1 ]]; then
     exit 0
 fi
 
-output=$(printf '%s\n' "$content" | sed -n "${second_last},$((last-1))p")
+start_line=$(( second_last > 1 ? second_last - 1 : 1 ))
+output=$(printf '%s\n' "$content" | sed -n "${start_line},$((last-1))p")
 
 if command -v pbcopy &>/dev/null; then
     printf '%s' "$output" | pbcopy

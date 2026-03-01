@@ -1,6 +1,6 @@
 # Things To Try
 
-A tour of all the non-standard tools and customizations in this setup. Run `tmux source-file ~/.tmux.conf` and `exec zsh` first to pick up any recent changes.
+A tour of all the non-standard tools and customizations in this setup. Run `tmux-reload` and `exec zsh` first to pick up any recent changes.
 
 
 ## Zsh - Fuzzy Finding (fzf)
@@ -111,6 +111,20 @@ Try: `git log -p` to see commit diffs with syntax highlighting.
 
 Try: Run `ls -la`, then `prefix + [`, navigate to a path, `v` to start selection, move to end, `y`. Paste in another app.
 Try: `prefix + y` to grab whatever's on your command line.
+
+
+## tmux - Output Copy Bindings
+
+Uses `❯` prompt character as anchors to capture command blocks (prompt prefix line, command, output, and the next prompt's prefix line with exit status/timing).
+
+- **prefix + o** (normal mode) - Copy the last completed command block to clipboard
+- **o** (copy mode) - Copy the command block surrounding the cursor to clipboard
+- **{** (copy mode) - Jump backward to the previous `❯` prompt
+- **}** (copy mode) - Jump forward to the next `❯` prompt
+
+Try: Run a command with output (e.g., `ls -la`), then `prefix + o`. Paste — you get the full prompt line, command, output, and the following prompt's status/timing line.
+Try: Run a few commands, enter copy mode (`prefix + [`), scroll up, position cursor near an old command, then press `o` to copy that block.
+Try: In copy mode, press `{` and `}` to hop between prompt boundaries while browsing history.
 
 
 ## tmux - extrakto (token extraction)
