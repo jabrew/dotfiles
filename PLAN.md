@@ -63,7 +63,7 @@ This applies everywhere fd is called including fzf keybindings.
 Also consider: only exclude `Library` when cwd is `~` specifically (harder, probably not worth it).
 **Action: create fdignore file in dotfiles + symlink.**
 
-### [ ] 2. Frecency file picker (zi equivalent for files)
+### [skip] 2. Frecency file picker (zi equivalent for files)
 zi uses zoxide's directory database. No direct equivalent for files built-in.
 Options:
   a. `fasd -f` tracking (we removed fasd - would need to re-add just the file tracking piece)
@@ -73,7 +73,7 @@ Options:
 The cleanest standalone solution is probably (c) `fre` or (b) a custom fd+fzf widget sorted by mtime.
 **Action: propose and let user pick approach.**
 
-### [ ] 5. VCS-agnostic gs/sw/br aliases
+### [skip] 5. VCS-agnostic gs/sw/br aliases
 No great existing tool covers git+hg universally.
 Approach: small shell scripts in `dotfiles/bin/` that detect VCS type and dispatch.
   - `gs` → checks for `.git`, `.hg`, `.svn`, dispatches to `git status` / `hg status` / etc.
