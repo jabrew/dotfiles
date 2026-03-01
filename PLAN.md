@@ -19,8 +19,9 @@ Fixed: `@fingers-key /` moves fingers to `prefix + /`. `prefix + f` stays as fin
 ### [x] 7a. tmux prefix+Y — strip trailing newline
 Overridden with explicit binding that pipes cwd through `tr -d '\n'`.
 
-### [x] 6 (partial). ge command
-Added `ge` shell function: `ge vim 1 2` expands to `vim $e1 $e2`. Works for any command.
+### [x] 6. scmpuff numeric arg expansion
+Refactored into `_scmpuff_run` helper. `lgv` and `lv` now expand numeric args implicitly.
+`ge` still available for arbitrary commands. `vim`/`nvim` wrappers skipped by user preference.
 
 ---
 
@@ -36,7 +37,7 @@ Bigger ask: detect where the prompt was, capture everything between then and now
 Could use tmux pane history + prompt marker. Several approaches, each with tradeoffs.
 **Action: propose approaches and let user decide.**
 
-### [ ] 8. extrakto — config review
+### [x] 8. extrakto — config review
 Research done. Key findings:
 - `@extrakto_filter_order` — set the default filter and order (e.g. `line word all`)
 - `@extrakto_copy_key` / `@extrakto_insert_key` — rebind copy vs insert (default: enter=copy, tab=insert). Note: these are fzf keys inside the popup, not tmux keys, so Shift-Enter isn't straightforward.

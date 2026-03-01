@@ -111,9 +111,9 @@ alias syncother="\
 "
 alias mailme='~/scripts/send-mail.py -t jbrewer@company.com -l $? -s'
 
-# ge - expand scmpuff numeric args ($e1, $e2, ...) for any command
-# e.g. `ge vim 1 2` → `vim $e1 $e2`
-ge() {
+# ge / lgv / lv - expand scmpuff numeric args ($e1, $e2, ...) for editor commands
+# e.g. `ge vim 1 2` → `vim $e1 $e2`, `lgv 1` → `lgv $e1`
+_scmpuff_run() {
   local cmd="$1"; shift
   local args=()
   for arg in "$@"; do
@@ -124,8 +124,12 @@ ge() {
       args+=("$arg")
     fi
   done
-  "$cmd" "${args[@]}"
+  command "$cmd" "${args[@]}"
 }
+
+ge()  { _scmpuff_run "$@" }
+lgv() { _scmpuff_run lgv "$@" }
+lv()  { _scmpuff_run lv "$@" }
 
 title () {
   printf '\033k'
