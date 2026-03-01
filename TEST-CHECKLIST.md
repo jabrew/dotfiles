@@ -117,11 +117,17 @@ Try: `prefix + y` to grab whatever's on your command line.
 
 - **prefix + Tab** - Opens fzf picker over all text visible in the current pane
 - Type to fuzzy filter
-- **Tab** - Cycle extraction mode: word / path / url / line
-- **Enter** - Insert the selection at your cursor
-- **Ctrl-Y** - Copy the selection to clipboard instead
+- **Ctrl-F** - Cycle extraction mode: word → path → url → line → all (mode shown in header)
+- **Tab** - Insert the selection at your cursor
+- **Enter** - Copy the selection to clipboard instead
+- **Ctrl-G** - Cycle grab area: current pane recent → current pane full → all panes
+- **Ctrl-E** - Open selection in $EDITOR
+- **Ctrl-O** - Open selection with OS default (browser for URLs, Finder for paths)
+- **Shift-Tab** - Multi-select (selections joined with spaces/newlines)
 
-Try: Run `git log --oneline`, then `prefix + Tab`, switch to "line" mode with Tab, and pick a commit message.
+To pick a whole line: open with `prefix + Tab`, press `Ctrl-F` until header shows "line", then Tab/Enter.
+
+Try: Run `git log --oneline`, open extrakto, press `Ctrl-F` a few times to reach "line" mode, pick a commit.
 Try: Run any command with file paths in the output, then `prefix + Tab` to grab one.
 
 
