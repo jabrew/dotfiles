@@ -9,7 +9,7 @@ content=$(tmux capture-pane -p -t "$pane_id" -S -10000 2>/dev/null)
 prompt_lines=()
 while IFS= read -r line; do
     prompt_lines+=("$line")
-done < <(printf '%s\n' "$content" | grep -n $'^❯ ' | cut -d: -f1)
+done < <(printf '%s\n' "$content" | grep -n $'^❯' | cut -d: -f1)
 
 count=${#prompt_lines[@]}
 if [[ $count -lt 2 ]]; then

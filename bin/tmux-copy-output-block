@@ -20,7 +20,7 @@ cursor_abs=$((history_size - scroll_position + cursor_y + 1))
 prompt_lines=()
 while IFS= read -r line; do
     prompt_lines+=("$line")
-done < <(printf '%s\n' "$content" | grep -n $'^❯ ' | cut -d: -f1)
+done < <(printf '%s\n' "$content" | grep -n $'^❯' | cut -d: -f1)
 
 # Find nearest prompt before cursor (start of block)
 start_line=1
