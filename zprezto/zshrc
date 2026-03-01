@@ -84,6 +84,7 @@ alias less='less -R'
 alias rgp='rg -t py'
 
 alias tclip='tmux show-buffer | pbcopy'
+alias treload='tmux source-file ~/.tmux.conf && echo "tmux config reloaded"'
 
 alias pip='pip3'
 alias python='python3'
