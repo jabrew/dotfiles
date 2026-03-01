@@ -159,4 +159,4 @@ Status: Reviewed - comments on lines starting with ">"
 
 ## Completed
 
-Items 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 17, 18
+Items 1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 13, 14, 15, 17, 18, 19 (covered by TEST-CHECKLIST.md)
