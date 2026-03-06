@@ -1,0 +1,78 @@
+{
+  "theme": "custom",
+  "display": {
+    "padding": 1,
+    "style": "powerline",
+    "charset": "unicode",
+    "colorCompatibility": "auto",
+    "autoWrap": true,
+    "lines": [
+      {
+        "segments": {
+          "directory": {
+            "enabled": true,
+            "style": "basename"
+          },
+          "git": {
+            "enabled": true,
+            "showSha": false,
+            "showWorkingTree": true,
+            "showOperation": true,
+            "showTag": false,
+            "showTimeSinceCommit": false,
+            "showStashCount": true,
+            "showUpstream": true,
+            "showRepoName": false
+          },
+          "model": {
+            "enabled": true
+          },
+          "context": {
+            "enabled": true,
+            "showPercentageOnly": false,
+            "displayStyle": "blocks"
+          }
+        }
+      },
+      {
+        "segments": {
+          "session": {
+            "enabled": true,
+            "type": "both",
+            "costSource": "calculated"
+          },
+          "block": {
+            "enabled": true,
+            "type": "weighted",
+            "burnType": "cost"
+          },
+          "today": {
+            "enabled": true,
+            "type": "cost"
+          }
+        }
+      }
+    ]
+  },
+  "colors": {
+    "custom": {
+      "directory":       { "bg": "#073642", "fg": "#93a1a1" },
+      "git":             { "bg": "#073642", "fg": "#268bd2" },
+      "model":           { "bg": "#073642", "fg": "#657b83" },
+      "context":         { "bg": "#073642", "fg": "#2aa198" },
+      "contextWarning":  { "bg": "#b58900", "fg": "#002b36" },
+      "contextCritical": { "bg": "#dc322f", "fg": "#fdf6e3" },
+      "session":         { "bg": "#073642", "fg": "#b58900" },
+      "block":           { "bg": "#073642", "fg": "#cb4b16" },
+      "today":           { "bg": "#073642", "fg": "#859900" },
+      "metrics":         { "bg": "#073642", "fg": "#586e75" },
+      "version":         { "bg": "#073642", "fg": "#586e75" },
+      "tmux":            { "bg": "#073642", "fg": "#586e75" }
+    }
+  },
+  "budget": {
+    "session": { "warningThreshold": 80 },
+    "today":   { "amount": 10.0, "warningThreshold": 80 },
+    "block":   { "warningThreshold": 80 }
+  }
+}

@@ -84,6 +84,15 @@ ln -sf $DOT_ROOT/atuin/config.toml ~/.config/atuin/config.toml
 # fd global ignore (applies to fzf Ctrl-T/Ctrl-F)
 mkdir -p ~/.config/fd
 ln -sf $DOT_ROOT/fd/fdignore ~/.config/fd/ignore
+
+# claude code
+mkdir -p ~/.claude/hooks
+ln -sf $DOT_ROOT/claude/settings.json ~/.claude/settings.json
+ln -sf $DOT_ROOT/claude/CLAUDE.md ~/.claude/CLAUDE.md
+ln -sf $DOT_ROOT/claude/claude-powerline.json ~/.claude/claude-powerline.json
+ln -sf $DOT_ROOT/claude/hooks/notify-done.sh ~/.claude/hooks/notify-done.sh
+ln -sf $DOT_ROOT/claude/hooks/notify-input.sh ~/.claude/hooks/notify-input.sh
+chmod +x $DOT_ROOT/claude/hooks/*.sh
 ```
 
 
@@ -163,6 +172,8 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 **iTerm2:**
 - Font: SauceCodePro Nerd Font, 15pt
 - Window size: 120x45
+- Key binding for Shift+Enter (needed for Claude Code newlines inside tmux):
+  Preferences → Profiles → Keys → Key Mappings → + → Keyboard shortcut: Shift+Enter, Action: Send escape sequence, value: `\r` (i.e. hex `0x1b 0x0d`)
 
 **Github SSH:**
 - Generate key: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent

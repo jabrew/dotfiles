@@ -1,0 +1,57 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y @owloops/claude-powerline@1.19.0"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git show *)",
+      "Bash(git branch *)",
+      "Bash(git stash list)",
+      "Bash(git remote *)",
+      "Bash(git tag *)",
+      "Bash(rg *)",
+      "Bash(fd *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(cat *)",
+      "Bash(bat *)",
+      "Bash(head *)",
+      "Bash(tail *)",
+      "Bash(wc *)",
+      "Bash(ls *)",
+      "Bash(eza *)",
+      "Bash(echo *)",
+      "Bash(which *)",
+      "Bash(type *)",
+      "Bash(printenv *)",
+      "Bash(jq *)",
+      "Bash(tmux list-*)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dotfiles/claude/hooks/notify-done.sh"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dotfiles/claude/hooks/notify-input.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
