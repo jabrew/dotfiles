@@ -20,6 +20,13 @@ Prefer these over standard alternatives when suggesting commands:
 | `z <query>` | `cd` | zoxide, jumps to frecent dirs |
 | `zi` | interactive cd | zoxide interactive fzf picker |
 | `git-delta` | default pager | already configured, diff output is rich |
+| `yq` | manual YAML editing | read/write YAML, JSON, XML, CSV, TOML |
+| `duckdb` | writing scripts to process data | SQL on CSV/JSON/Parquet files directly, no setup |
+| `http`/`https` | `curl` | httpie — readable HTTP requests and responses |
+| `tldr` | `man` | concise command examples (tlrc client) |
+| `semgrep` | writing grep pipelines for code | structural code search with language-aware patterns |
+
+Prefer these tools over writing scripts. Use `duckdb` to query/transform structured data, `yq` for config file manipulation, `semgrep` for code pattern matching, `http` for API calls. Combine with `jq`, `fzf`, `rg`, `fd` for pipelines.
 
 fzf is wired to: Ctrl-T (files), Ctrl-F (dirs/cd), Ctrl-R (atuin history search).
 Tab completion is powered by fzf-tab with tmux popups and bat/eza previews.

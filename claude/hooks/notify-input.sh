@@ -19,8 +19,9 @@ case "$NOTIF_TYPE" in
 esac
 REASON="${REASON//\'/}"
 
-if command -v hs &>/dev/null; then
-  hs -c "hs.notify.new({title='Claude Code', subtitle='${DIR}', informativeText='${REASON}', soundName='Ping'}):send()" 2>/dev/null
+HS=/Users/jbrewer/bin/hs
+if [[ -x "$HS" ]]; then
+  "$HS" -c "hs.notify.new({title='Claude Code', subtitle='${DIR}', informativeText='${REASON}', soundName='Ping'}):send()" 2>/dev/null
 else
   osascript -e "display notification \"${REASON}\" with title \"Claude Code\" subtitle \"${DIR}\" sound name \"Ping\""
 fi

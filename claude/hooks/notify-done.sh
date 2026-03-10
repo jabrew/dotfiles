@@ -16,8 +16,9 @@ DIR=$(basename "${CWD:-unknown}")
 # Sanitize: remove single quotes so Lua string literal stays valid
 DIR="${DIR//\'/}"
 
-if command -v hs &>/dev/null; then
-  hs -c "hs.notify.new({title='Claude Code', subtitle='${DIR}', informativeText='Response complete', soundName='Glass'}):send()" 2>/dev/null
+HS=/Users/jbrewer/bin/hs
+if [[ -x "$HS" ]]; then
+  "$HS" -c "hs.notify.new({title='Claude Code', subtitle='${DIR}', informativeText='Response complete', soundName='Glass'}):send()" 2>/dev/null
 else
   osascript -e "display notification \"Response complete\" with title \"Claude Code\" subtitle \"${DIR}\" sound name \"Glass\""
 fi

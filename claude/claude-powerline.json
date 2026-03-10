@@ -20,8 +20,8 @@
             "showOperation": true,
             "showTag": false,
             "showTimeSinceCommit": false,
-            "showStashCount": true,
-            "showUpstream": true,
+            "showStashCount": false,
+            "showUpstream": false,
             "showRepoName": false
           },
           "model": {
@@ -29,16 +29,16 @@
           },
           "context": {
             "enabled": true,
-            "showPercentageOnly": false,
-            "displayStyle": "blocks"
+            "showPercentageOnly": true,
+            "displayStyle": "filled"
           }
         }
       },
       {
         "segments": {
           "session": {
-            "enabled": true,
-            "type": "both",
+            "enabled": false,
+            "type": "tokens",
             "costSource": "calculated"
           },
           "block": {
@@ -47,7 +47,7 @@
             "burnType": "cost"
           },
           "today": {
-            "enabled": true,
+            "enabled": false,
             "type": "cost"
           }
         }
@@ -56,18 +56,18 @@
   },
   "colors": {
     "custom": {
-      "directory":       { "bg": "#073642", "fg": "#93a1a1" },
-      "git":             { "bg": "#073642", "fg": "#268bd2" },
-      "model":           { "bg": "#073642", "fg": "#657b83" },
-      "context":         { "bg": "#073642", "fg": "#2aa198" },
-      "contextWarning":  { "bg": "#b58900", "fg": "#002b36" },
-      "contextCritical": { "bg": "#dc322f", "fg": "#fdf6e3" },
-      "session":         { "bg": "#073642", "fg": "#b58900" },
-      "block":           { "bg": "#073642", "fg": "#cb4b16" },
-      "today":           { "bg": "#073642", "fg": "#859900" },
-      "metrics":         { "bg": "#073642", "fg": "#586e75" },
-      "version":         { "bg": "#073642", "fg": "#586e75" },
-      "tmux":            { "bg": "#073642", "fg": "#586e75" }
+      "directory":       { "bg": "#7e99d6", "fg": "#303446" },
+      "git":             { "bg": "#95bc7b", "fg": "#303446" },
+      "model":           { "bg": "#b68ecf", "fg": "#303446" },
+      "context":         { "bg": "#8abcc5", "fg": "#303446" },
+      "contextWarning":  { "bg": "#ceb482", "fg": "#303446" },
+      "contextCritical": { "bg": "#d07577", "fg": "#303446" },
+      "session":         { "bg": "#74b4ab", "fg": "#303446" },
+      "block":           { "bg": "#d78f6a", "fg": "#303446" },
+      "today":           { "bg": "#ceb482", "fg": "#303446" },
+      "metrics":         { "bg": "#3b3e50", "fg": "#c6d0f5" },
+      "version":         { "bg": "#3b3e50", "fg": "#c6d0f5" },
+      "tmux":            { "bg": "#3b3e50", "fg": "#c6d0f5" }
     }
   },
   "budget": {

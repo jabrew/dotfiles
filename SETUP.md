@@ -18,7 +18,7 @@ Install Homebrew if not already present:
 brew install zsh tmux jq
 
 # CLI tools
-brew install fd ripgrep git-delta eza bat
+brew install fd ripgrep git-delta eza bat yq httpie tlrc semgrep duckdb
 
 # Fuzzy finder
 brew install fzf
@@ -184,6 +184,7 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 - Run `~/dotfiles/setup-hammerspoon.sh`
 - Run `hs.ipc.cliInstall('/Users/jbrewer')` from Hammerspoon console
 - May need to `mkdir ~/bin` first
+- System Settings → Notifications → Hammerspoon → Allow Notifications (needed for Claude Code hooks)
 
 **Karabiner Elements:**
 - Application -> Right Command
