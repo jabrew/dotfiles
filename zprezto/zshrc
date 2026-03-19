@@ -137,11 +137,13 @@ title () {
   printf '\033\\'
 }
 
-function rename_tab {
-  # Note: May require tmux set-option -g set-titles on
-  echo -ne "\033]0;"$@"\007"
-}
-rename_tab zsh
+# Clear tmux @indicator when back at the shell prompt.
+# Claude hooks set this to show working/idle/permission state;
+# clearing it here means non-Claude panes show no indicator.
+if [[ -n "$TMUX" ]]; then
+  _clear_tmux_indicator() { tmux set -p @indicator '' \; set -p @claude '' 2>/dev/null }
+  add-zsh-hook precmd _clear_tmux_indicator
+fi
 
 say () {
   printf '\x1bPtmux;\x1b\x1b]9;'
@@ -267,6 +269,7 @@ __git_files () {
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="$HOME/.local/bin:$PATH"
+export PATH=~/dotfiles/bin:$PATH
 
 # fzf - fuzzy finder (Ctrl-R history, Ctrl-T files, Ctrl-F cd into dir)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

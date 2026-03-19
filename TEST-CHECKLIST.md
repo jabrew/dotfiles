@@ -198,6 +198,14 @@ Try: Open a few windows with `prefix + c`, then jump between them with Alt-1, Al
 | tmux-fingers | Vimium-style hint copying in tmux | manual copy-paste |
 
 
+## Claude Code (inside tmux)
+
+- **Shift+Enter** - Insert a newline in your message without submitting (requires the iTerm2 key binding from SETUP.md)
+- **{ / }** in copy mode - These work on Claude Code's `❯` prompt characters too, not just your zsh prompts. Enter copy mode (`prefix + [`), then `{`/`}` to hop between Claude Code turns or shell prompts.
+
+Try: Open `claude` in a tmux pane. Type a multi-line message using Shift+Enter, then submit. Scroll up, enter copy mode, and use `{`/`}` to navigate between Claude's responses.
+
+
 ## Plugin Management
 
 Plugins are pinned in `plugins.lock` and installed with `install-plugins.sh`. No plugin manager (TPM) is used.

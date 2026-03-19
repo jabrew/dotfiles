@@ -23,4 +23,9 @@ else
   osascript -e "display notification \"Response complete\" with title \"Claude Code\" subtitle \"${DIR}\" sound name \"Glass\""
 fi
 
+# Set tmux indicator to idle
+if [[ -n "$TMUX" ]]; then
+  tmux set -p @indicator "💤" 2>/dev/null
+fi
+
 exit 0

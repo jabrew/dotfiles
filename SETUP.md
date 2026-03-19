@@ -92,6 +92,7 @@ ln -sf $DOT_ROOT/claude/CLAUDE.md ~/.claude/CLAUDE.md
 ln -sf $DOT_ROOT/claude/claude-powerline.json ~/.claude/claude-powerline.json
 ln -sf $DOT_ROOT/claude/hooks/notify-done.sh ~/.claude/hooks/notify-done.sh
 ln -sf $DOT_ROOT/claude/hooks/notify-input.sh ~/.claude/hooks/notify-input.sh
+ln -sf $DOT_ROOT/claude/hooks/set-indicator.sh ~/.claude/hooks/set-indicator.sh
 chmod +x $DOT_ROOT/claude/hooks/*.sh
 ```
 

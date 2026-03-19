@@ -502,6 +502,8 @@ function layoutWindows()
         end
       elseif appName == 'Google Chrome' then
         windowPosition(window, 'center', 'top', 1360, 960)
+      elseif appName == 'Firefox' then
+        windowPosition(window, 'center', 'top', 1360, 960)
       elseif appName == 'Microsoft OneNote' then
         windowPosition(window, 'center', 'top', 1360, 960)
       elseif appName == 'Zotero' then

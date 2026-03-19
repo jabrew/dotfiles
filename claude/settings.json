@@ -1,8 +1,4 @@
 {
-  "statusLine": {
-    "type": "command",
-    "command": "npx -y @owloops/claude-powerline@1.19.0"
-  },
   "permissions": {
     "allow": [
       "Bash(git status)",
@@ -32,7 +28,18 @@
       "Bash(tmux list-*)"
     ]
   },
+  "model": "Opus",
   "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/dotfiles/claude/hooks/set-indicator.sh"
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "hooks": [
@@ -53,5 +60,9 @@
         ]
       }
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "npx -y @owloops/claude-powerline@1.19.0"
   }
 }

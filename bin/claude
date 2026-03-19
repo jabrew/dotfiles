@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Wrapper for claude that marks the tmux pane so the tab shows "claude"
+# instead of the version string that Claude Code sets as its process title.
+
+_cleanup() {
+  if [[ -n "$TMUX" ]]; then
+    tmux set -p @claude '' 2>/dev/null
+    tmux set -w allow-rename on 2>/dev/null
+  fi
+}
+trap _cleanup EXIT
+
+if [[ -n "$TMUX" ]]; then
+  tmux set -p @claude 1 2>/dev/null
+  # Prevent Claude from overwriting the window title via OSC escape sequences
+  tmux set -w allow-rename off 2>/dev/null
+fi
+
+~/.local/bin/claude "$@"
