@@ -40,6 +40,16 @@
         ]
       }
     ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "test -n \"$TMUX\" && tmux set -p @indicator '🔧' 2>/dev/null; exit 0"
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "hooks": [
