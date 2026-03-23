@@ -183,7 +183,7 @@ basicBindings = {
   {'d', 'iTerm2'},
   {'a', 'IntelliJ IDEA'},
   -- {'w', 'VimWiki'},
-  {'q', 'Slack'},
+  {'q', 'Discord'},
   -- {'t', 'alacritty'},
   {'g', 'Microsoft OneNote'},
 }
