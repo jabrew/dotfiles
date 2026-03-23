@@ -45,7 +45,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "test -n \"$TMUX\" && tmux set -p @indicator '🔧' 2>/dev/null; exit 0"
+            "command": "test -n \"$TMUX\" && test -n \"$TMUX_PANE\" && tmux set -p -t \"$TMUX_PANE\" @indicator '🔧' 2>/dev/null; exit 0"
           }
         ]
       }
@@ -53,6 +53,10 @@
     "Stop": [
       {
         "hooks": [
+          {
+            "type": "command",
+            "command": "~/dotfiles/claude/hooks/set-indicator.sh"
+          },
           {
             "type": "command",
             "command": "~/dotfiles/claude/hooks/notify-done.sh"
@@ -63,6 +67,10 @@
     "Notification": [
       {
         "hooks": [
+          {
+            "type": "command",
+            "command": "~/dotfiles/claude/hooks/set-indicator.sh"
+          },
           {
             "type": "command",
             "command": "~/dotfiles/claude/hooks/notify-input.sh"

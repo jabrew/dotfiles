@@ -3,8 +3,8 @@
 # Called from UserPromptSubmit, Stop, and Notification hooks.
 
 # Fast path: if $TMUX is inherited, use it directly.
-if [[ -n "$TMUX" ]]; then
-  _set() { tmux set -p @indicator "$1" 2>/dev/null; }
+if [[ -n "$TMUX" && -n "$TMUX_PANE" ]]; then
+  _set() { tmux set -p -t "$TMUX_PANE" @indicator "$1" 2>/dev/null; }
 else
   # Hooks may not inherit $TMUX. Find the right server and pane
   # by walking up the PID tree across all tmux servers.

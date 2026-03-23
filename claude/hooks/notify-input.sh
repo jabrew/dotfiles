@@ -26,12 +26,4 @@ else
   osascript -e "display notification \"${REASON}\" with title \"Claude Code\" subtitle \"${DIR}\" sound name \"Ping\""
 fi
 
-# Set tmux indicator
-if [[ -n "$TMUX" ]]; then
-  case "$NOTIF_TYPE" in
-    permission_prompt) tmux set -p @indicator "⚡" 2>/dev/null ;;
-    *)                 tmux set -p @indicator "💤" 2>/dev/null ;;
-  esac
-fi
-
 exit 0
