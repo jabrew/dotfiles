@@ -224,7 +224,7 @@ setopt CLOBBER
 # Allow comments inline in the shell
 setopt interactivecomments
 
-setopt INC_APPEND_HISTORY
+setopt APPEND_HISTORY
 HISTSIZE=100000
 SAVEHIST=100000
 
