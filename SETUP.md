@@ -1,122 +1,44 @@
 # New Machine Setup
 
-Step-by-step guide for setting up a new machine from this dotfiles repo.
-
-
-## 1. Homebrew
-
-Install Homebrew if not already present:
+## Quick Start
 
 ```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+git clone git@github.com:jabrew/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+./setup.sh
 ```
 
+This installs Homebrew (if needed), all packages from `Brewfile`, plugins from
+`plugins.lock`, creates symlinks, and imports shell history into atuin. Manual
+steps that need interaction (iTerm2, SSH keys, Karabiner, Hammerspoon) are
+printed at the end.
 
-## 2. Core Packages
 
+## Updating
+
+**Brew packages:**
 ```sh
-brew install zsh tmux jq
-
-# CLI tools
-brew install fd ripgrep git-delta eza bat yq httpie tlrc semgrep duckdb
-
-# Fuzzy finder
-brew install fzf
-$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-bash --no-fish --no-update-rc
-
-# Directory jumping (replaces fasd)
-brew install zoxide
-
-# Shell history
-brew install atuin
-
-# Git status numbering
-brew install scmpuff
+# Add/remove lines in Brewfile, then:
+brew bundle --file=~/dotfiles/Brewfile
 ```
 
-
-## 3. Shell
-
-Set zsh as default shell if not already:
-
+**Plugins:**
 ```sh
-chsh -s /bin/zsh
-```
-
-
-## 4. Install plugins
-
-Installs prezto, zsh plugins, and tmux plugins at pinned commits from `plugins.lock`:
-
-```sh
-./install-plugins.sh
-```
-
-To update all plugins to latest and see new SHAs:
-
-```sh
+# Update all plugins to latest:
 ./install-plugins.sh --update
+# Then update the SHAs in plugins.lock to pin the new versions.
 ```
 
-Then update the SHAs in `plugins.lock` to pin the new versions.
-
-
-## 5. Symlinks
-
+**Re-run full setup** (idempotent — safe to re-run):
 ```sh
-DOT_ROOT=~/dotfiles
-
-# zsh
-ln -sf $DOT_ROOT/zprezto/zshrc ~/.zshrc
-ln -sf $DOT_ROOT/zprezto/zpreztorc ~/.zpreztorc
-ln -sf $DOT_ROOT/zprezto/theme_p10k.zsh ~/.p10k.zsh
-
-# tmux
-ln -sf $DOT_ROOT/tmux/tmux.conf ~/.tmux.conf
-
-# git
-ln -sf $DOT_ROOT/git/gitconfig ~/.gitconfig
-
-# atuin
-mkdir -p ~/.config/atuin
-ln -sf $DOT_ROOT/atuin/config.toml ~/.config/atuin/config.toml
-
-# fd global ignore (applies to fzf Ctrl-T/Ctrl-F)
-mkdir -p ~/.config/fd
-ln -sf $DOT_ROOT/fd/fdignore ~/.config/fd/ignore
-
-# claude code
-mkdir -p ~/.claude/hooks
-ln -sf $DOT_ROOT/claude/settings.json ~/.claude/settings.json
-ln -sf $DOT_ROOT/claude/CLAUDE.md ~/.claude/CLAUDE.md
-ln -sf $DOT_ROOT/claude/claude-powerline.json ~/.claude/claude-powerline.json
-ln -sf $DOT_ROOT/claude/hooks/notify-done.sh ~/.claude/hooks/notify-done.sh
-ln -sf $DOT_ROOT/claude/hooks/notify-input.sh ~/.claude/hooks/notify-input.sh
-ln -sf $DOT_ROOT/claude/hooks/set-indicator.sh ~/.claude/hooks/set-indicator.sh
-chmod +x $DOT_ROOT/claude/hooks/*.sh
+./setup.sh
 ```
 
 
-## 6. Atuin - import history
-
-```sh
-atuin import auto
-```
-
-
-## 7. Zoxide - import fasd data (if migrating)
-
-Only needed if migrating from a machine that used fasd:
-
-```sh
-zoxide import --from=fasd ~/.fasd
-```
-
-
-## 8. Usage Reference
+## Usage Reference
 
 **fzf (fuzzy finder) - searches the filesystem:**
-- `Ctrl-R` - fuzzy search command history
+- `Ctrl-R` - fuzzy search command history (atuin)
 - `Ctrl-T` - fuzzy find files under cwd, paste path onto command line
 - `Ctrl-F` - fuzzy find directories under cwd and cd into selection
 
@@ -157,45 +79,18 @@ fzf searches the filesystem as it is now. zoxide remembers where you've been and
 - Great for grabbing file paths, URLs, hashes, or any text visible in the pane
 
 **tmux-fingers (vimium-style hints):**
-- `prefix + F` - highlights copyable items (paths, URLs, hashes, IPs, etc.) with hint labels
+- `prefix + /` - highlights copyable items (paths, URLs, hashes, IPs, etc.) with hint labels
 - Type the hint label to copy that item to clipboard
 - Similar to Vimium's link hints in a browser
 
 **tmux window navigation:**
 - `Shift-Left` / `Shift-Right` - previous/next window
+- `Ctrl+Alt+Shift-Left` / `Ctrl+Alt+Shift-Right` - move window left/right
 - `Alt-1` through `Alt-9` - jump to window by number
 - `prefix + ;` - command prompt
 - `prefix + :` - last pane
 
-
-## 9. Manual Steps
-
-**iTerm2:**
-- Font: SauceCodePro Nerd Font, 15pt
-- Window size: 120x45
-- Key binding for Shift+Enter (needed for Claude Code newlines inside tmux):
-  Preferences → Profiles → Keys → Key Mappings → + → Keyboard shortcut: Shift+Enter, Action: Send escape sequence, value: `\r` (i.e. hex `0x1b 0x0d`)
-
-**Github SSH:**
-- Generate key: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-- Add to github: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-- Ensure repos use ssh: `git remote set-url origin git@github.com:jabrew/dotfiles.git`
-
-**Hammerspoon:**
-- Run `~/dotfiles/setup-hammerspoon.sh`
-- Run `hs.ipc.cliInstall('/Users/jbrewer')` from Hammerspoon console
-- May need to `mkdir ~/bin` first
-- System Settings → Notifications → Hammerspoon → Allow Notifications (needed for Claude Code hooks)
-
-**Karabiner Elements:**
-- Application -> Right Command
-- Caps lock -> F19
-- Right option -> right command (only on MS Natural)
-- Right command -> right option (only on MS Natural)
-
-
-## 10. Restart Shell
-
-```sh
-exec zsh
-```
+**tmux copy helpers:**
+- `prefix + o` - copy last command's output to clipboard
+- In copy mode: `o` - select and copy the command+output block at cursor
+- In copy mode: `{` / `}` - jump between shell prompts

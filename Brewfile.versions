@@ -1,0 +1,29 @@
+# Known-working versions of Brewfile packages on this dotfiles setup.
+#
+# NOTE: This is a *record*, not a lockfile. Homebrew does not support
+# version-pinned installation from a Brewfile — `brew bundle` always
+# installs whatever is current in homebrew-core. This file exists so that:
+#   1. setup.sh can warn when installed versions drift from these
+#   2. You have a reference for what versions last worked together
+#
+# To regenerate after verifying a new set works:
+#   ./setup.sh --record-versions
+#
+# Format: <package> <version>
+zsh 5.9
+tmux 3.6a
+jq 1.8.1
+fd 10.4.2
+ripgrep 15.1.0
+git-delta 0.19.2
+eza 0.23.4
+bat 0.26.1
+yq 4.52.5
+httpie 3.2.4_8
+tlrc 1.13.0
+semgrep 1.157.0
+duckdb 1.5.1
+fzf 0.71.0
+zoxide 0.9.9
+atuin 18.13.6
+scmpuff 0.6.3

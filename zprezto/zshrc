@@ -178,6 +178,8 @@ else
     eval $(tmux show-env | sed -n 's/^\(SSH_[^=]*\)=\(.*\)/export \1="\2"/p')
   }
 
+  tmux-copy() { tmux load-buffer -w -; }
+
   if [[ `hostname` =~ '^.*jbrewer$' ]]; then
     export MY_HOST_NAME='specific_server'
 

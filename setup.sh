@@ -1,103 +1,168 @@
-#!/usr/local/bin/zsh
+#!/usr/bin/env bash
+#
+# Dotfiles setup — run on a fresh macOS machine after cloning to ~/dotfiles.
+#
+# Usage:
+#   ./setup.sh                    # install everything
+#   ./setup.sh --record-versions  # update Brewfile.versions from current installs
+#
+# Steps that need a password or external action are printed as manual
+# instructions rather than run silently.
+#
+set -euo pipefail
 
-echo "
-# Install middleClick
-# https://github.com/artginzburg/MiddleClick-Ventura
-# Forked from https://github.com/cl3m/MiddleClick
-brew install --cask --no-quarantine middleclick
+# ── Platform check ──────────────────────────────────────────────────
+if [[ "$(uname)" != "Darwin" ]]; then
+  echo "Error: this setup script only supports macOS." >&2
+  exit 1
+fi
 
-Todo: Consider also adding to login items
+DOT="$HOME/dotfiles"
+VERSIONS_FILE="$DOT/Brewfile.versions"
 
-# Change shell after installing zsh
-chsh -s /bin/zsh
-"
+section() { printf '\n\033[1;34m==> %s\033[0m\n' "$1"; }
 
-echo "
-iTerm:
-- Inconsolata-g for Powerline, 15
-  - 120x45 for new windows
-"
+# ── --record-versions mode ──────────────────────────────────────────
+if [[ "${1:-}" == "--record-versions" ]]; then
+  section "Recording currently-installed versions to Brewfile.versions"
+  {
+    echo "# Known-working versions of Brewfile packages on this dotfiles setup."
+    echo "# See comment in setup.sh. Regenerate with: ./setup.sh --record-versions"
+    echo "# Format: <package> <version>"
+    grep -E '^brew "' "$DOT/Brewfile" | sed 's/brew "\([^"]*\)"/\1/' | while read -r pkg; do
+      brew list --versions "$pkg" 2>/dev/null || echo "# MISSING: $pkg"
+    done
+  } > "$VERSIONS_FILE"
+  echo "Wrote $VERSIONS_FILE"
+  exit 0
+fi
 
-echo "
-Install zprezto from https://github.com/sorin-ionescu/prezto
-"
+# ── 1. Homebrew ──────────────────────────────────────────────────────
+section "Homebrew"
+if command -v brew &>/dev/null; then
+  echo "Homebrew already installed."
+else
+  echo "Installing Homebrew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-# Exit on any error
-set -e
+# ── 2. Packages ──────────────────────────────────────────────────────
+section "Brew packages (from Brewfile)"
+brew bundle --file="$DOT/Brewfile"
 
-echo "
-Apps
-1. scm_breeze
-"
+# Warn if installed versions drift from Brewfile.versions
+if [[ -f "$VERSIONS_FILE" ]]; then
+  drift=0
+  while IFS=' ' read -r pkg recorded; do
+    [[ "$pkg" =~ ^#.*$ || -z "$pkg" ]] && continue
+    actual=$(brew list --versions "$pkg" 2>/dev/null | awk '{print $2}')
+    if [[ -n "$actual" && "$actual" != "$recorded" ]]; then
+      echo "  drift: $pkg installed=$actual recorded=$recorded"
+      drift=1
+    fi
+  done < "$VERSIONS_FILE"
+  if [[ "$drift" == 1 ]]; then
+    echo "  (run './setup.sh --record-versions' after verifying things work)"
+  fi
+fi
 
-echo "
-Homebrew installs:
-brew install zsh
-brew install tmux
-brew install jq
-# brew install scmpuff
-# cli tools
-brew install fd ripgrep git-delta eza bat
-"
+# fzf key bindings and completion (idempotent)
+"$(brew --prefix)/opt/fzf/install" --key-bindings --completion --no-bash --no-fish --no-update-rc
 
-cat << EOM
-Neovim:
-xcode-select --install
-brew install --head neovim
-pip3 install --user neovim
+# ── 3. Default shell ─────────────────────────────────────────────────
+section "Default shell"
+if [[ "$SHELL" == */zsh ]]; then
+  echo "Already using zsh."
+else
+  echo "Run manually (needs password):  chsh -s /bin/zsh"
+fi
 
-Glrnvim:
-brew cask install alacritty
-mkdir ~/bin
-cd ~/bin
+# ── 4. Plugins ───────────────────────────────────────────────────────
+section "Plugins (from plugins.lock)"
+"$DOT/install-plugins.sh"
 
-clone glrnvim repo
-# Note: Likely no longer needed
-# Make following edits to main.rs:
-# +    let path = env::current_dir().unwrap();
-# +    command.arg("--working-directory");
-# +    command.arg(path.into_os_string());
-#      command.arg("--class");
+# ── 5. Symlinks ──────────────────────────────────────────────────────
+section "Symlinks"
 
-# Set ~/bin/gnv to:
-# #!/bin/sh
-# ~/bin/glrnvim/target/release/glrnvim "$@"
+# Create symlink; fail if dst already exists as something other than the
+# correct symlink (real file, wrong symlink, directory, etc.).
+link() {
+  local src="$1" dst="$2"
+  mkdir -p "$(dirname "$dst")"
+  if [[ -L "$dst" ]]; then
+    if [[ "$(readlink "$dst")" == "$src" ]]; then
+      return  # already correct
+    fi
+    echo "Error: $dst is a symlink pointing to $(readlink "$dst"), expected $src" >&2
+    exit 1
+  fi
+  if [[ -e "$dst" ]]; then
+    echo "Error: $dst already exists (not a symlink). Remove it first." >&2
+    exit 1
+  fi
+  ln -s "$src" "$dst"
+  echo "  $dst -> $src"
+}
 
-ln -s ~/glrnvim/target/release/glrnvim ~/bin/lgv
+# zsh
+link "$DOT/zprezto/zshrc"        "$HOME/.zshrc"
+link "$DOT/zprezto/zpreztorc"    "$HOME/.zpreztorc"
+link "$DOT/zprezto/theme_p10k.zsh" "$HOME/.p10k.zsh"
 
-# Note: Path printed after 'lgv -h' - seems to change
-# ln -s ~/VimConfig/glrnvim.yml ~/Library/Preferences/
-ln -s ~/VimConfig/glrnvim.yml ~/Library/Application\ Support/glrnvim/config.yml
-EOM
+# tmux
+link "$DOT/tmux/tmux.conf"       "$HOME/.tmux.conf"
 
-echo "
-Github setup:
-- Generate key with https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-- Add to github with https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-Note: Each repo needs to use ssh instead of https
-  - use git remote -v to check (should be git://)
-  - fix with git remote set-url origin git@github.com:jabrew/dotfiles.git
-"
+# git
+link "$DOT/git/gitconfig"        "$HOME/.gitconfig"
 
-echo "
-Hammerspoon
-- Run hammerspoon setup script ~/dotfiles/setup-hammerspoon.sh
-- Run hs.ipc.cliInstall() from console
-  - hs.ipc.cliInstall('/Users/jbrewer')
-  - Test by running 'hs' from cli
-  - May need to mkdir ~/bin first
+# atuin
+link "$DOT/atuin/config.toml"    "$HOME/.config/atuin/config.toml"
 
-Karabiner elements:
-  - Application -> Right Command
-  - Caps lock -> F19
-  - Right option -> right command (only on MS Natural)
-  - Right command -> right option (only on MS Natural)
+# fd global ignore (applies to fzf Ctrl-T/Ctrl-F)
+link "$DOT/fd/fdignore"          "$HOME/.config/fd/ignore"
 
-Font for nvim: Source Code Pro for Powerline
-Currently use regular Source Code Pro (slightly larger)
-  mkdir ~/bin/powerline; cd ~/bin/powerline
-  git clone https://github.com/powerline/fonts.git
-NOTE: Actually for sidebar.nvim use nerd font - extension from https://www.nerdfonts.com/font-downloads
-  SauceCodePro Nerd Font [Or SauceCodePro Nerd Font Mono]
-"
+# claude code
+link "$DOT/claude/settings.json"         "$HOME/.claude/settings.json"
+link "$DOT/claude/CLAUDE.md"             "$HOME/.claude/CLAUDE.md"
+link "$DOT/claude/claude-powerline.json" "$HOME/.claude/claude-powerline.json"
+link "$DOT/claude/hooks/notify-done.sh"  "$HOME/.claude/hooks/notify-done.sh"
+link "$DOT/claude/hooks/notify-input.sh" "$HOME/.claude/hooks/notify-input.sh"
+link "$DOT/claude/hooks/set-indicator.sh" "$HOME/.claude/hooks/set-indicator.sh"
+chmod +x "$DOT/claude/hooks/"*.sh
 
+# hammerspoon
+link "$DOT/hammerspoon/hammerspoon.lua" "$HOME/.hammerspoon/init.lua"
+
+# ── 6. Import history ────────────────────────────────────────────────
+section "Atuin history import"
+if command -v atuin &>/dev/null; then
+  atuin import auto 2>/dev/null || echo "No history to import (or already imported)."
+else
+  echo "Skipped — atuin not found."
+fi
+
+# ── 7. Manual steps ──────────────────────────────────────────────────
+section "Manual steps remaining"
+cat <<'EOF'
+  iTerm2:
+    - Font: SauceCodePro Nerd Font, 15pt
+    - Window size: 120x45
+    - Shift+Enter binding: Profiles → Keys → Key Mappings → +
+      Keyboard shortcut: Shift+Enter, Action: Send escape sequence, value: \r
+
+  GitHub SSH:
+    - Generate key and add to GitHub
+
+  Hammerspoon:
+    - Run: hs.ipc.cliInstall('/Users/jbrewer')  (from Hammerspoon console)
+    - May need: mkdir ~/bin
+    - System Settings → Notifications → Hammerspoon → Allow Notifications
+
+  Karabiner Elements:
+    - Application -> Right Command
+    - Caps lock -> F19
+    - Right option -> right command (only on MS Natural)
+    - Right command -> right option (only on MS Natural)
+EOF
+
+section "Done — restart your shell with: exec zsh"
